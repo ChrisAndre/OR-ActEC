@@ -10,24 +10,8 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 import net.sf.openrocket.l10n.Translator;
-import net.sf.openrocket.rocketcomponent.BodyTube;
-import net.sf.openrocket.rocketcomponent.Bulkhead;
-import net.sf.openrocket.rocketcomponent.CenteringRing;
-import net.sf.openrocket.rocketcomponent.EllipticalFinSet;
-import net.sf.openrocket.rocketcomponent.EngineBlock;
-import net.sf.openrocket.rocketcomponent.FreeformFinSet;
-import net.sf.openrocket.rocketcomponent.InnerTube;
-import net.sf.openrocket.rocketcomponent.LaunchLug;
-import net.sf.openrocket.rocketcomponent.MassComponent;
+import net.sf.openrocket.rocketcomponent.*;
 import net.sf.openrocket.rocketcomponent.MassComponent.MassComponentType;
-import net.sf.openrocket.rocketcomponent.NoseCone;
-import net.sf.openrocket.rocketcomponent.Parachute;
-import net.sf.openrocket.rocketcomponent.ShockCord;
-import net.sf.openrocket.rocketcomponent.Streamer;
-import net.sf.openrocket.rocketcomponent.Transition;
-import net.sf.openrocket.rocketcomponent.TrapezoidFinSet;
-import net.sf.openrocket.rocketcomponent.TubeCoupler;
-import net.sf.openrocket.rocketcomponent.TubeFinSet;
 import net.sf.openrocket.startup.Application;
 
 public class ComponentIcons {
@@ -79,6 +63,8 @@ public class ComponentIcons {
 				ShockCord.class);
 		load("mass", trans.get("ComponentIcons.Masscomponent"),
 				MassComponent.class);
+		// // Control element set
+		load("streamer", "Control Element Set", ControlElementSet.class);
 		// // Mass components
 		loadMassTypeIcon("mass", trans.get("ComponentIcons.Masscomponent"),
 				MassComponentType.MASSCOMPONENT);
