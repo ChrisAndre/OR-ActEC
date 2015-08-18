@@ -2,6 +2,7 @@ package net.sf.openrocket.aerodynamics.controls;
 
 import net.sf.openrocket.aerodynamics.FlightConditions;
 import net.sf.openrocket.aerodynamics.WarningSet;
+import net.sf.openrocket.flightcomputer.IControllable;
 import net.sf.openrocket.util.Coordinate;
 
 /**
@@ -10,7 +11,7 @@ import net.sf.openrocket.util.Coordinate;
  * @author Chris Andre
  */
 
-public abstract class ControlElement {
+public abstract class ControlElement implements IControllable {
     protected double u;
     public void setControl(double u) {
         this.u = u;

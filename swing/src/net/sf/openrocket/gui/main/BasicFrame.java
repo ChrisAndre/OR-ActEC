@@ -84,6 +84,7 @@ import net.sf.openrocket.gui.dialogs.SwingWorkerDialog;
 import net.sf.openrocket.gui.dialogs.WarningDialog;
 import net.sf.openrocket.gui.dialogs.optimization.GeneralOptimizationDialog;
 import net.sf.openrocket.gui.dialogs.preferences.PreferencesDialog;
+import net.sf.openrocket.gui.dispersion.Display;
 import net.sf.openrocket.gui.figure3d.photo.PhotoFrame;
 import net.sf.openrocket.gui.help.tours.GuidedTourSelectionDialog;
 import net.sf.openrocket.gui.main.componenttree.ComponentTree;
@@ -126,6 +127,7 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 	public static final int COMPONENT_TAB = 0;
 	public static final int CONFIGURATION_TAB = 1;
 	public static final int SIMULATION_TAB = 2;
+	public static final int TORTURE_TAB = 3;
 	
 	
 	/**
@@ -158,6 +160,7 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 	private final RocketActions actions;
 	
 	private SimulationPanel simulationPanel;
+	private TortureTestPanel torturePanel;
 	
 	
 	/**
@@ -185,6 +188,9 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		selectionModel = new DocumentSelectionModel(document);
 		selectionModel.attachComponentTreeSelectionModel(componentSelectionModel);
 		selectionModel.attachSimulationListSelectionModel(simulationSelectionModel);
+
+		// Add torture test panel
+		torturePanel = new TortureTestPanel(document);
 		
 		
 		actions = new RocketActions(document, selectionModel, this);
@@ -206,6 +212,8 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, new FlightConfigurationPanel(document));
 		//// Flight simulations
 		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, simulationPanel);
+		//// Torture test simulations
+		tabbedPane.addTab("Torture Test", null, torturePanel);
 		
 		// Add change listener to catch when the tabs are changed.  This is to run simulations 
 		// automagically when the simulation tab is selected.

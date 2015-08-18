@@ -1,7 +1,10 @@
 package net.sf.openrocket.rocketcomponent;
 
 import net.sf.openrocket.aerodynamics.controls.ControlElement;
+import net.sf.openrocket.aerodynamics.controls.ElementType;
 import net.sf.openrocket.aerodynamics.controls.InactiveElement;
+import net.sf.openrocket.database.ComponentPresetDatabase;
+import net.sf.openrocket.preset.ComponentPreset;
 import net.sf.openrocket.util.Coordinate;
 
 import java.util.ArrayList;
@@ -15,35 +18,86 @@ import java.util.Collection;
 
 public class ControlElementSet extends ExternalComponent {
     protected int num = 3;
-    protected double radius = 0.04;
-    protected double indiv_size = 0.01;
+    protected double indiv_size = 0.05;
     protected boolean deployed = true;
+    private double multRadius = 1.0;
+    protected double baseRot = 0.0;
     protected ControlElement[] elements;
-    public void setControls(double[] u) {
-        for (int i = 0; i < num; i++) {
-            elements[i].setControl(u[i]);
-        }
-    }
+    protected ElementType type;
+
     public ControlElementSet() {
         super(Position.BOTTOM);
         elements = new ControlElement[num];
-        for (int i = 0; i < num; i++) {
-            // Default element
-            elements[i] = new InactiveElement();
-        }
-        length = 0.02;
+        setElementType(ElementType.INACTIVE);
+        length = 0.01;
     }
-    public void deploy(boolean deployed) {
-        this.deployed = deployed;
-    }
-    public boolean isDeployed() {
+
+    // Properties
+
+    public boolean getDeployed() {
         return deployed;
     }
+    public void setDeployed(boolean deployed) {
+        this.deployed = deployed;
+        fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);
+    }
+
     public int getElementCount() {
         return num;
     }
-    public double getRadius() {
-        return radius;
+    public void setElementCount(int n) {
+        num = n;
+        elements = new ControlElement[num];
+        try {
+            for (int i = 0; i < num; i++) {
+                // Default element
+                elements[i] = type.getElement();
+            }
+        } catch (Exception e) {
+            for (int i = 0; i < num; i++) {
+                // Default element
+                elements[i] = new InactiveElement();
+            }
+        }
+        fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);
+    }
+
+    public ElementType getElementType() {
+        return type;
+    }
+    public void setElementType(ElementType type) {
+        this.type = type;
+        try {
+            for (int i = 0; i < num; i++) {
+                // Default element
+                elements[i] = type.getElement();
+            }
+        } catch (Exception e) {
+            for (int i = 0; i < num; i++) {
+                // Default element
+                elements[i] = new InactiveElement();
+            }
+        }
+        fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);
+    }
+
+    public double getBaseRotation() {return baseRot;}
+    public void setBaseRotation(double rot) {baseRot = rot;fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);}
+
+    // Misc.
+
+    public double getBodyRadius() {
+        RocketComponent s;
+
+        s = this.getParent();
+        while (s != null) {
+            if (s instanceof SymmetricComponent) {
+                double x = this.toRelative(new Coordinate(0, 0, 0), s)[0].x;
+                return ((SymmetricComponent) s).getRadius(x) * multRadius;
+            }
+            s = s.getParent();
+        }
+        return 0;
     }
     public double getIndividualSize() {
         return indiv_size;
@@ -53,8 +107,8 @@ public class ControlElementSet extends ExternalComponent {
     }
     public double[] getPos(int i) {
         double[] ret = new double[2];
-        ret[0] = radius * Math.cos(i * 2.0 * Math.PI / num);
-        ret[1] = radius * Math.sin(i * 2.0 * Math.PI / num);
+        ret[0] = getBodyRadius() * Math.cos(i * 2.0 * Math.PI / num);
+        ret[1] = getBodyRadius() * Math.sin(i * 2.0 * Math.PI / num);
         return ret;
     }
     public double getRot(int i) {
@@ -65,7 +119,7 @@ public class ControlElementSet extends ExternalComponent {
 
     @Override
     public double getComponentVolume() {
-        return 0.0001;
+        return 0.0;
     }
 
     @Override
@@ -75,17 +129,17 @@ public class ControlElementSet extends ExternalComponent {
 
     @Override
     public Coordinate getComponentCG() {
-        return new Coordinate(length/2.0,0,0,0.0001);
+        return new Coordinate(length/2.0,0,0,0.0);
     }
 
     @Override
     public double getLongitudinalUnitInertia() {
-        return 0.0001;
+        return 0.0;
     }
 
     @Override
     public double getRotationalUnitInertia() {
-        return 0.0001;
+        return 0.0;
     }
 
     @Override
@@ -101,8 +155,8 @@ public class ControlElementSet extends ExternalComponent {
     @Override
     public Collection<Coordinate> getComponentBounds() {
         ArrayList<Coordinate> set = new ArrayList<Coordinate>();
-        addBound(set, 0.0, radius);
-        addBound(set, length, radius);
+        addBound(set, 0.0, getBodyRadius());
+        addBound(set, length, getBodyRadius());
         return set;
     }
 }

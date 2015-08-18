@@ -1,7 +1,5 @@
 package net.sf.openrocket.gui.rocketfigure;
 
-import net.sf.openrocket.rocketcomponent.ControlElementSet;
-import net.sf.openrocket.rocketcomponent.RocketComponent;
 import net.sf.openrocket.util.Coordinate;
 import net.sf.openrocket.util.Transformation;
 
@@ -13,23 +11,21 @@ import java.awt.geom.Rectangle2D;
  * Created by chris on 8/16/15.
  */
 public class ControlElementSetShapes extends RocketComponentShapes {
-    public static Shape[] getShapesSide(RocketComponent component, Transformation transformation) {
-        ControlElementSet set = (ControlElementSet) component;
+    public static Shape[] getShapesSide(net.sf.openrocket.rocketcomponent.RocketComponent component, Transformation transformation) {
+        net.sf.openrocket.rocketcomponent.ControlElementSet set = (net.sf.openrocket.rocketcomponent.ControlElementSet) component;
         double length = set.getLength();
-        double radius = set.getRadius();
-        double indivsz = set.getIndividualSize();
+        double radius = set.getBodyRadius();
         Coordinate[] start = transformation.transform(set.toAbsolute(new Coordinate(0,0,0)));
         Shape[] s = new Shape[start.length];
         for (int i = 0; i < start.length; i++) {
-            s[i] = new Rectangle2D.Double(start[i].x*S,(start[i].y-radius)*S,length*S,2.0*radius*S);
+            s[i] = s[i] = new Rectangle2D.Double(start[i].x*S,(start[i].y-radius)*S, length*S,2*radius*S);
         }
         return s;
     }
-    public static Shape[] getShapesBack(RocketComponent component, Transformation transformation) {
-        ControlElementSet set = (ControlElementSet) component;
+    public static Shape[] getShapesBack(net.sf.openrocket.rocketcomponent.RocketComponent component, Transformation transformation) {
+        net.sf.openrocket.rocketcomponent.ControlElementSet set = (net.sf.openrocket.rocketcomponent.ControlElementSet) component;
         double length = set.getLength();
-        double radius = set.getRadius();
-        double indivsz = set.getIndividualSize();
+        double radius = set.getBodyRadius();
         Coordinate[] start = transformation.transform(set.toAbsolute(new Coordinate(0,0,0)));
         Shape[] s = new Shape[start.length];
         for (int i = 0; i < start.length; i++) {

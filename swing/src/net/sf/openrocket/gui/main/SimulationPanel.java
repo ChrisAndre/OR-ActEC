@@ -246,7 +246,36 @@ public class SimulationPanel extends JPanel {
 
 			}
 		});
-		this.add(plotButton, "wrap para");
+		this.add(plotButton, "wrap para"); // change to wrap para instead of gapright para if this is the last button
+
+//		//// Torture test button
+//		tortureButton = new JButton("Torture test");
+//		tortureButton.addActionListener(new ActionListener() {
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+////				int selected = simulationTable.getSelectedRow();
+////				if (selected < 0) {
+////					return;
+////				}
+////				selected = simulationTable.convertRowIndexToModel(selected);
+////				simulationTable.clearSelection();
+////				simulationTable.addRowSelectionInterval(selected, selected);
+////
+////
+////				Simulation sim = document.getSimulations().get(selected);
+////
+////				if (!sim.hasSimulationData()) {
+////					new SimulationRunDialog(SwingUtilities.getWindowAncestor(
+////							SimulationPanel.this), document, sim).setVisible(true);
+////				}
+////
+////				fireMaintainSelection();
+////
+////				openDialog(true, sim);
+//
+//			}
+//		});
+//		this.add(tortureButton, "wrap para");
 
 
 
@@ -574,11 +603,14 @@ public class SimulationPanel extends JPanel {
 			runButton.setEnabled(false);
 			deleteButton.setEnabled(false);
 			plotButton.setEnabled(false);
+//			tortureButton.setEnabled(false);
 		} else {
 			if (selection.length > 1) {
 				plotButton.setEnabled(false);
+//				tortureButton.setEnabled(false);
 			} else {
 				plotButton.setEnabled(true);
+//				tortureButton.setEnabled(true);
 			}
 			editButton.setEnabled(true);
 			runButton.setEnabled(true);
