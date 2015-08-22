@@ -1,4 +1,4 @@
-package net.sf.openrocket.flightcomputer;
+package net.sf.openrocket.simulation.listeners.flightcomputer;
 
 /**
  * FlightComputer

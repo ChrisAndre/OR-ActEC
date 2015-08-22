@@ -120,7 +120,9 @@ public class Display extends JPanel implements GLEventListener {
 	GLUquadric q;
 
 	//----------------------------------------------------------private final BeastKDEDensity d = new BeastKDEDensity();
-
+	public void purgeSimulations() {
+		simulations.clear();
+	}
 	public void addSimulation(final Simulation s) {
 		simulations.offer(s);
 		// highlighted = s;
@@ -128,19 +130,19 @@ public class Display extends JPanel implements GLEventListener {
 		if (simulations.size() > LIMIT)
 			simulations.poll();
 
-		for (int bi = 0; bi < s.getSimulatedData().getBranchCount(); bi++) {
-			FlightDataBranch b = s.getSimulatedData().getBranch(bi);
-
-			final Coordinate c = new Coordinate(b.getLast(FlightDataType.TYPE_POSITION_X),
-					b.getLast(FlightDataType.TYPE_POSITION_Y), 0);
-			final double vz = b.getLast(FlightDataType.TYPE_VELOCITY_Z);
-
-			if (vz < -10)
-				impact.offer(c);
-			else
-				landing.offer(c);
-			//-------------------------------------------------------------------------------------------------d.add(c);
-		}
+//		for (int bi = 0; bi < s.getSimulatedData().getBranchCount(); bi++) {
+//			FlightDataBranch b = s.getSimulatedData().getBranch(bi);
+//
+//			final Coordinate c = new Coordinate(b.getLast(FlightDataType.TYPE_POSITION_X),
+//					b.getLast(FlightDataType.TYPE_POSITION_Y), 0);
+//			final double vz = b.getLast(FlightDataType.TYPE_VELOCITY_Z);
+//
+//			if (vz < -10)
+//				impact.offer(c);
+//			else
+//				landing.offer(c);
+//			//-------------------------------------------------------------------------------------------------d.add(c);
+//		}
 
 		repaint();
 	}
@@ -423,18 +425,39 @@ public class Display extends JPanel implements GLEventListener {
 
 	/**
 	 * Draw a nice little 1m tall arrow at the origin, pointing up
-	 * 
+	 *
+	 * Adapted to draw reference axes
 	 * @param drawable
 	 */
 	public void drawUpArrow(final GLAutoDrawable drawable) {
-
-		gl.glColor3d(0.1, 0.5, 0.1);
-
-		glu.gluSphere(q, 0.1f, 10, 10);
+		// Up arrow - Blue Z
+		gl.glColor3d(0.1, 0.1, 0.5);
 		glu.gluCylinder(q, .05, .05, .7, 10, 10);
 		gl.glTranslated(0, 0, .7);
 		glu.gluCylinder(q, .15, 0, .3, 20, 1);
 		gl.glTranslated(0, 0, -.7);
+
+//		// Red X
+//		gl.glColor3d(0.5, 0.1, 0.1);
+////		GLUquadric rot = glu.gluNewQuadric();
+//		gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+//		glu.gluCylinder(q, .05, .05, .7, 10, 10);
+//		gl.glTranslated(0, 0, .7);
+//		glu.gluCylinder(q, .15, 0, .3, 20, 1);
+//		gl.glTranslated(0, 0, -.7);
+//
+//		// Green Y
+//		gl.glColor3d(0.1, 0.5, 0.1);
+////		rot = glu.gluNewQuadric();
+//		gl.glRotatef(90.0f, -1.0f, 0.0f, 0.0f);
+//		glu.gluCylinder(q, .05, .05, .7, 10, 10);
+//		gl.glTranslated(0, 0, .7);
+//		glu.gluCylinder(q, .15, 0, .3, 20, 1);
+//		gl.glTranslated(0, 0, -.7);
+//
+//		gl.glRotatef(q, );
+//
+////		glu.gluNewQuadric();
 	}
 
 	public void drawGroundGrid(final GLAutoDrawable drawable) {

@@ -211,7 +211,8 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		//// Flight configurations
 		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, new FlightConfigurationPanel(document));
 		//// Flight simulations
-		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, simulationPanel);
+//		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, simulationPanel);
+		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, new SplitSim3DViewportPanel(document));
 		//// Torture test simulations
 		tabbedPane.addTab("Torture Test", null, torturePanel);
 		

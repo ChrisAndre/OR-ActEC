@@ -40,6 +40,7 @@ import net.sf.openrocket.gui.adaptors.ColumnTableModel;
 import net.sf.openrocket.gui.adaptors.ColumnTableRowSorter;
 import net.sf.openrocket.gui.adaptors.ValueColumn;
 import net.sf.openrocket.gui.components.StyledLabel;
+import net.sf.openrocket.gui.dispersion.Display;
 import net.sf.openrocket.gui.simulation.SimulationEditDialog;
 import net.sf.openrocket.gui.simulation.SimulationRunDialog;
 import net.sf.openrocket.gui.simulation.SimulationWarningDialog;
@@ -83,6 +84,13 @@ public class SimulationPanel extends JPanel {
 	private final JButton runButton;
 	private final JButton deleteButton;
 	private final JButton plotButton;
+	private final JButton plot3DButton;
+
+	private Display display;
+
+	public void passDisplayObject(Display dsp) {
+		this.display = dsp;
+	}
 
 	public SimulationPanel(OpenRocketDocument doc) {
 		super(new MigLayout("fill", "[grow][][][][][][grow]"));
@@ -246,32 +254,64 @@ public class SimulationPanel extends JPanel {
 
 			}
 		});
-		this.add(plotButton, "wrap para"); // change to wrap para instead of gapright para if this is the last button
+		this.add(plotButton, "gapright para"); // change to wrap para instead of gapright para if this is the last button
+
+		//// Plot 3D button
+		plot3DButton = new JButton("Plot 3D");
+		plot3DButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int selected = simulationTable.getSelectedRow();
+				if (selected < 0) {
+					return;
+				}
+				selected = simulationTable.convertRowIndexToModel(selected);
+				simulationTable.clearSelection();
+				simulationTable.addRowSelectionInterval(selected, selected);
+
+				Simulation sim = document.getSimulations().get(selected);
+
+				if (!sim.hasSimulationData()) {
+					return;
+				}
+
+				fireMaintainSelection();
+
+				if (display != null) {
+					display.purgeSimulations();
+					display.addSimulation(sim);
+				}
+
+//				openDialog(true, sim);
+
+			}
+		});
+		this.add(plot3DButton, "wrap para");
 
 //		//// Torture test button
 //		tortureButton = new JButton("Torture test");
 //		tortureButton.addActionListener(new ActionListener() {
 //			@Override
 //			public void actionPerformed(ActionEvent e) {
-////				int selected = simulationTable.getSelectedRow();
-////				if (selected < 0) {
-////					return;
-////				}
-////				selected = simulationTable.convertRowIndexToModel(selected);
-////				simulationTable.clearSelection();
-////				simulationTable.addRowSelectionInterval(selected, selected);
-////
-////
-////				Simulation sim = document.getSimulations().get(selected);
-////
-////				if (!sim.hasSimulationData()) {
-////					new SimulationRunDialog(SwingUtilities.getWindowAncestor(
-////							SimulationPanel.this), document, sim).setVisible(true);
-////				}
-////
-////				fireMaintainSelection();
-////
-////				openDialog(true, sim);
+//				int selected = simulationTable.getSelectedRow();
+//				if (selected < 0) {
+//					return;
+//				}
+//				selected = simulationTable.convertRowIndexToModel(selected);
+//				simulationTable.clearSelection();
+//				simulationTable.addRowSelectionInterval(selected, selected);
+//
+//
+//				Simulation sim = document.getSimulations().get(selected);
+//
+//				if (!sim.hasSimulationData()) {
+//					new SimulationRunDialog(SwingUtilities.getWindowAncestor(
+//							SimulationPanel.this), document, sim).setVisible(true);
+//				}
+//
+//				fireMaintainSelection();
+//
+//				openDialog(true, sim);
 //
 //			}
 //		});
@@ -603,13 +643,16 @@ public class SimulationPanel extends JPanel {
 			runButton.setEnabled(false);
 			deleteButton.setEnabled(false);
 			plotButton.setEnabled(false);
+			plot3DButton.setEnabled(false);
 //			tortureButton.setEnabled(false);
 		} else {
 			if (selection.length > 1) {
 				plotButton.setEnabled(false);
+				plot3DButton.setEnabled(false);
 //				tortureButton.setEnabled(false);
 			} else {
 				plotButton.setEnabled(true);
+				plot3DButton.setEnabled(true);
 //				tortureButton.setEnabled(true);
 			}
 			editButton.setEnabled(true);

@@ -67,7 +67,16 @@ public class FlightConditions implements Cloneable, ChangeSource, Monitorable {
 	private double yawRate = 0;
 	
 	private Coordinate pitchCenter = Coordinate.NUL;
-	
+
+	// Rocket-centric component vectors
+	private Coordinate airvel = Coordinate.NUL;
+	public void setAirVelocity(Coordinate vel) {
+		airvel = vel;
+		fireChangeEvent();
+	}
+	public Coordinate getAirVelocity() {
+		return airvel;
+	}
 	
 	private AtmosphericConditions atmosphericConditions = new AtmosphericConditions();
 	

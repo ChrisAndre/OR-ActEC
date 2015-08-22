@@ -29,12 +29,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccelerationData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/AccelerationData.java">
+      <file leaf-file-name="BasicFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35102925">
-              <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
-              <folding />
+            <state vertical-scroll-proportion="0.156013">
+              <caret line="238" column="42" selection-start-line="238" selection-start-column="42" selection-end-line="238" selection-end-column="42" />
+              <folding>
+                <element signature="e#8759#8886#0" expanded="true" />
+                <element signature="e#8885#8886#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,14 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/DensityRenderer.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/Display.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/PathRenderer.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/bkukerdispersion/analysys/Density.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/bkuker/dispersion/vizualization/DensityRenderer.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/bkuker/analysys/vizualization/DensityRenderer.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/vizualization/DensityRenderer.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/Dispersion.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/vizualization/DensityRenderer.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/vizualization/Display.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/vizualization/PathRenderer.java" />
@@ -78,8 +73,6 @@
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/vizualization/DensityRenderer.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/vizualization/PathRenderer.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/IControllable.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SimulationPanel.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/Dispersion.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/vizualization/Display.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/core/Engine.java" />
@@ -100,15 +93,25 @@
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/core/mutators/SimulationConditionsMutator.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/core/mutators/SimulationOptionsMutator.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/core/mutators/Util.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/TortureTestPanel.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/FlightComputer.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/ApogeeReporter.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/BrickedComputer.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/FlightComputerType.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Engine.java" />
+        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java" />
+        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SimulationPanel.java" />
+        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SplitSim3DViewportPanel.java" />
+        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/FlightConditions.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java" />
       </list>
     </option>
   </component>
@@ -128,9 +131,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1631" />
-    <option name="height" value="1026" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -155,6 +158,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,11 +169,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openrocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,6 +559,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -571,15 +663,18 @@
       <workItem from="1439771818129" duration="928000" />
       <workItem from="1439818047372" duration="17808000" />
       <workItem from="1439850472386" duration="14664000" />
-      <workItem from="1439913882672" duration="7084000" />
+      <workItem from="1439913882672" duration="28751000" />
+      <workItem from="1440097763943" duration="23199000" />
+      <workItem from="1440223142902" duration="394000" />
+      <workItem from="1440274117709" duration="5892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117746000" />
+    <option name="totallyTimeSpent" value="168898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1631" height="1026" extended-state="6" />
+    <frame x="49" y="-4" width="1631" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -625,7 +720,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -634,52 +729,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/RocketComponent.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/BrickedComputer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33261105">
-          <caret line="727" column="32" selection-start-line="727" selection-start-column="32" selection-end-line="727" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.156013">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/preset/loader/LaunchLugLoader.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/document/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0780065">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.2340195">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/preset/xml/LaunchLugDTO.java">
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SimulationPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019501625">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.48320693">
+          <caret line="282" column="17" selection-start-line="282" selection-start-column="17" selection-end-line="282" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/rocketfigure/ControlElementSetShapes.java">
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SplitSim3DViewportPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21451788">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/configdialog/ComponentConfigDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.454844">
-          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/configdialog/ControlElementSetConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="615" column="37" selection-start-line="615" selection-start-column="37" selection-end-line="615" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.48754063">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -690,355 +764,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/BasicEventSimulationEngine.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationOptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18093175">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state vertical-scroll-proportion="-2.4182014">
+          <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationConditions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
+        <state vertical-scroll-proportion="-1.5157096">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.21451788">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1954023">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40953413">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/SymmetricComponentCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34994584">
-          <caret line="101" column="37" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/FinSetCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41603467">
-          <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3900325">
-          <caret line="383" column="12" selection-start-line="383" selection-start-column="12" selection-end-line="383" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/plot/SimulationPlot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13651137">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/document/OpenRocketDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3542795">
-          <caret line="246" column="34" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19501625">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/IControllable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11700975">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-libraries/ActionBarSherlock/src/com/actionbarsherlock/internal/app/ActionBarImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-libraries/ActionBarSherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-libraries/achartengine/src/org/achartengine/model/XYSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SimulationPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.3163595">
-          <caret line="613" column="13" selection-start-line="613" selection-start-column="13" selection-end-line="613" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Gaussian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Odds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/PinkNoise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Uniform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Uniform2PI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0806271">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/variables/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/AbstractComponentMutator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/MassMutator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/Mutator.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationStepper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0780065">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/ParachuteFailure.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2418813">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state vertical-scroll-proportion="1.0725894">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/RocketMutator.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightDataBranch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.1419285">
+          <caret line="232" column="35" selection-start-line="232" selection-start-column="35" selection-end-line="232" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/RodAngleMutator.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/SimulationConditionsMutator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/SimulationOptionsMutator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12094065">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/mutators/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18141097">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.156013">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="62" selection-start-line="215" selection-start-column="62" selection-end-line="215" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.014084507">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25027084">
+          <caret line="440" column="36" selection-start-line="440" selection-start-column="36" selection-end-line="440" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Reflection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3347778">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Quaternion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60996747">
+          <caret line="242" column="47" selection-start-line="242" selection-start-column="47" selection-end-line="242" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/QuaternionMultiply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7746479">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Transformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.843987">
+          <caret line="258" column="4" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/WorldCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31744313">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Rotation2D.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding>
-            <element signature="initializer##0;class#Display#0" expanded="false" />
-            <element signature="e#1924#1952#0" expanded="false" />
-            <element signature="initializer##1;class#Display#0" expanded="false" />
-            <element signature="e#2797#2861#0" expanded="false" />
-            <element signature="initializer##2;class#Display#0" expanded="false" />
-            <element signature="method#getEventColor#0;class#Display#0" expanded="false" />
-            <element signature="method#addSimulation#0;class#Display#0" expanded="false" />
-            <element signature="method#setupMouseListeners#0;class#Display#0" expanded="false" />
-            <element signature="class#5510:6828" expanded="false" />
-            <element signature="method#mousePressed#0;class#5510:6828" expanded="false" />
-            <element signature="method#mouseWheelMoved#0;class#5510:6828" expanded="false" />
-            <element signature="e#5981#6021#0" expanded="false" />
-            <element signature="method#mouseDragged#0;class#5510:6828" expanded="false" />
-            <element signature="e#6214#6275#0" expanded="false" />
-            <element signature="method#paintImmediately#0;class#Display#0" expanded="false" />
-            <element signature="method#paintImmediately#1;class#Display#0" expanded="false" />
-            <element signature="method#display#0;class#Display#0" expanded="false" />
-            <element signature="method#drawSimulations#0;class#Display#0" expanded="false" />
-            <element signature="method#drawSimulation#0;class#Display#0" expanded="false" />
-            <element signature="method#drawBranch#0;class#Display#0" expanded="false" />
-            <element signature="method#drawPoints#0;class#Display#0" expanded="false" />
-            <element signature="docComment;method#drawUpArrow#0;class#Display#0" expanded="false" />
-            <element signature="method#drawUpArrow#0;class#Display#0" expanded="false" />
-            <element signature="method#drawGroundGrid#0;class#Display#0" expanded="false" />
-            <element signature="method#dispose#0;class#Display#0" expanded="false" />
-            <element signature="method#init#0;class#Display#0" expanded="false" />
-            <element signature="method#reshape#0;class#Display#0" expanded="false" />
-            <element signature="class#Bounds#0;class#Display#0" expanded="false" />
-            <element signature="method#main#0;class#Display#0" expanded="false" />
-          </folding>
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6288998">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/TortureTestPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/BrickedComputer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.156013">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/FlightComputer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27302274">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/FlightComputerType.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AbstractAerodynamicCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2340195">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-          </folding>
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Engine.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21451788">
-          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        <state vertical-scroll-proportion="-0.15059589">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33261105">
+          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/FlightConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019501625">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2026002">
+          <caret line="119" column="62" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4951246">
+          <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="docComment;field#component#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#cp#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#CNa#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#CN#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#Cm#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#Cside#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#Cyaw#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#Croll#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#CrollDamp#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#CrollForce#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#Caxial#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#CD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#pressureCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#baseCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;field#frictionCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setForce#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setMoment#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCForce#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCMoment#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setComponent#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCP#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCNa#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCN#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCm#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCside#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCyaw#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCroll#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCrollDamp#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCrollForce#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCaxial#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setPressureCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setBaseCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setFrictionCD#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setPitchDampingMoment#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#setYawDampingMoment#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;method#reset#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#reset#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="docComment;method#zero#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#clone#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#equals#0;class#AerodynamicForces#0" expanded="false" />
+            <element signature="method#toString#0;class#AerodynamicForces#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,15 +959,204 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29252437">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33152762">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19501625">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/.settings/org.eclipse.core.resources.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/sky/lake.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/sky/miramar/miramar_bk.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/utils/ComponentPresetEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1711807">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/OpenRocket Swing.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35102925">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10089686">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03900325">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18093175">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/flame/c-color.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6435536">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#ControlElementSet#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#setDeployed#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#setElementCount#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#setElementType#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#getBaseRotation#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#setBaseRotation#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#getBodyRadius#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#getPos#0;class#ControlElementSet#0" expanded="false" />
+            <element signature="method#getComponentBounds#0;class#ControlElementSet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/IControllable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.097508125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputerType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21451788">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2340195">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/ISensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11700975">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/AccelerationData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35102925">
-          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.2340195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.55363">
+          <caret line="715" column="8" selection-start-line="715" selection-start-column="8" selection-end-line="715" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019501625">
+          <caret line="261" column="4" selection-start-line="261" selection-start-column="4" selection-end-line="261" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/AbstractSimulationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0140846">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/example/RollControlListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9165764">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2340195">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4539545">
+          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding>
+            <element signature="e#2245#2562#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.156013">
+          <caret line="238" column="42" selection-start-line="238" selection-start-column="42" selection-end-line="238" selection-end-column="42" />
+          <folding>
+            <element signature="e#8759#8886#0" expanded="true" />
+            <element signature="e#8885#8886#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

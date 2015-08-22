@@ -30,24 +30,16 @@ public class ControlElementSetCalc extends RocketComponentCalc {
         }
         double stagCD = BarrowmanCalculator.calculateStagnationCD(conditions.getMach());
         double baseCD = BarrowmanCalculator.calculateBaseCD(conditions.getMach());
-        double[] elem_forces = new double[ces.getElementCount()];
+        double[] elem_forces = new double[ces.getElementCount()]; // these are confusingly normalized by dynamic pressure
         for (int i = 0; i < ces.getElementCount(); i++) {
             elem_forces[i] = ces.getElements()[i].calculatePressureDragForce(conditions, stagCD, baseCD, warnings);
         }
-        double[] moment = new double[2];
+        double mx = 0.0, my = 0.0;
         for (int i = 0; i < ces.getElementCount(); i++) {
-            moment[0] += elem_forces[i] * Math.sin(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
-            moment[1] += -elem_forces[i] * Math.cos(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
+            mx += elem_forces[i] * Math.sin(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
+            my += -elem_forces[i] * Math.cos(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
         }
-        forces.setCm(0);
-        forces.setCyaw(-1);
-        forces.setCN(0);
-        forces.setCNa(0);
-        forces.setCP(Coordinate.NUL);
-        forces.setCroll(0);
-        forces.setCrollDamp(0);
-        forces.setCrollForce(0);
-        forces.setCside(0);
+        forces.setCMoment(new Coordinate(mx, my, 0.0));
     }
 
     @Override

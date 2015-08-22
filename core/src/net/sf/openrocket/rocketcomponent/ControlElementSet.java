@@ -107,12 +107,12 @@ public class ControlElementSet extends ExternalComponent {
     }
     public double[] getPos(int i) {
         double[] ret = new double[2];
-        ret[0] = getBodyRadius() * Math.cos(i * 2.0 * Math.PI / num);
-        ret[1] = getBodyRadius() * Math.sin(i * 2.0 * Math.PI / num);
+        ret[0] = getBodyRadius() * Math.cos(getRot(i));
+        ret[1] = getBodyRadius() * Math.sin(getRot(i));
         return ret;
     }
     public double getRot(int i) {
-        return i * 2.0 * Math.PI / num;
+        return i * 2.0 * Math.PI / num + baseRot;
     }
 
     // Overrides

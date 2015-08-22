@@ -1,4 +1,4 @@
-package net.sf.openrocket.flightcomputer;
+package net.sf.openrocket.simulation.listeners.flightcomputer;
 
 import net.sf.openrocket.aerodynamics.FlightConditions;
 import net.sf.openrocket.models.atmosphere.AtmosphericConditions;

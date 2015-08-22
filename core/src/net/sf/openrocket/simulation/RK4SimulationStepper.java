@@ -348,7 +348,10 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 					forceZ / store.massData.getCG().weight);
 		
 		store.linearAcceleration = store.thetaRotation.rotateZ(store.linearAcceleration);
-		
+
+		store.linearAcceleration = store.linearAcceleration.add(store.forces.getForce().multiply(1.0/store.massData.getCG().weight)); // CTA - add force overrides
+		store.linearAcceleration = store.linearAcceleration.add(store.forces.getCForce().multiply(dynP * refArea/store.massData.getCG().weight)); // CTA - add force overrides
+
 		// Convert into rocket world coordinates
 		store.linearAcceleration = status.getRocketOrientationQuaternion().rotate(store.linearAcceleration);
 		
@@ -370,7 +373,7 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 			store.angularAcceleration = Coordinate.NUL;
 			store.rollAcceleration = 0;
 			store.lateralPitchAcceleration = 0;
-			
+
 		} else {
 			
 			// Shift moments to CG
@@ -382,17 +385,30 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 			double momY = Cm * dynP * refArea * refLength;
 			double momZ = store.forces.getCroll() * dynP * refArea * refLength;
 			
-			// Compute acceleration in rocket coordinates
+			// Compute acceleration in rocket coordinates - CTA: this is probably in *rotated* rocket coords...
 			store.angularAcceleration = new Coordinate(momX / store.massData.getLongitudinalInertia(),
 						momY / store.massData.getLongitudinalInertia(),
 						momZ / store.massData.getRotationalInertia());
 			
-			store.rollAcceleration = store.angularAcceleration.z;
+			store.rollAcceleration = store.angularAcceleration.z; // - CTA: this is undone later...
 			// TODO: LOW: This should be hypot, but does it matter?
 			store.lateralPitchAcceleration = MathUtil.max(Math.abs(store.angularAcceleration.x),
-						Math.abs(store.angularAcceleration.y));
-			
+					Math.abs(store.angularAcceleration.y)); // - CTA: this is undone later...
+
+			// - CTA: Convert to actual rocket coordinates
 			store.angularAcceleration = store.thetaRotation.rotateZ(store.angularAcceleration);
+
+			// CTA: Add on moment overrides
+			Coordinate moment = store.forces.getMoment();
+			Coordinate angAccelAdd = new Coordinate(moment.x / store.massData.getLongitudinalInertia(), moment.y / store.massData.getLongitudinalInertia(), moment.z / store.massData.getRotationalInertia());
+			store.angularAcceleration = store.angularAcceleration.add(angAccelAdd);
+			// CTA: Add on pressure-scaled moment overrides
+			moment = store.forces.getCMoment().multiply(dynP * refArea * refLength);
+			angAccelAdd = new Coordinate(moment.x / store.massData.getLongitudinalInertia(), moment.y / store.massData.getLongitudinalInertia(), moment.z / store.massData.getRotationalInertia());
+			store.angularAcceleration = store.angularAcceleration.add(angAccelAdd);
+
+			store.rollAcceleration = store.angularAcceleration.z;
+			store.lateralPitchAcceleration = Math.hypot(store.angularAcceleration.x, store.angularAcceleration.y);
 			
 			// Convert to world coordinates
 			store.angularAcceleration = status.getRocketOrientationQuaternion().rotate(store.angularAcceleration);
@@ -486,9 +502,10 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 
 		//// Local wind speed and direction
 		Coordinate windSpeed = modelWindVelocity(status);
-		Coordinate airSpeed = status.getRocketVelocity().add(windSpeed);
+		Coordinate airSpeed = status.getRocketVelocity().add(windSpeed); // CTA - shouldn't subtraction be done here?
 		airSpeed = status.getRocketOrientationQuaternion().invRotate(airSpeed);
-		
+
+		store.flightConditions.setAirVelocity(airSpeed); // CTA
 
 		// Lateral direction:
 		double len = MathUtil.hypot(airSpeed.x, airSpeed.y);

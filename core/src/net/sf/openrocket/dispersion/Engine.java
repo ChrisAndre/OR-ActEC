@@ -6,7 +6,7 @@ import java.util.Vector;
 
 import net.sf.openrocket.document.OpenRocketDocument;
 import net.sf.openrocket.document.Simulation;
-import net.sf.openrocket.flightcomputer.FlightComputerType;
+import net.sf.openrocket.simulation.listeners.flightcomputer.FlightComputerType;
 import net.sf.openrocket.simulation.SimulationStatus;
 import net.sf.openrocket.simulation.exception.SimulationException;
 import net.sf.openrocket.simulation.listeners.AbstractSimulationListener;
