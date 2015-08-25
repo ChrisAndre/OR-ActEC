@@ -85,6 +85,7 @@ public class SimulationPanel extends JPanel {
 	private final JButton deleteButton;
 	private final JButton plotButton;
 	private final JButton plot3DButton;
+	private final JButton tortureButton;
 
 	private Display display;
 
@@ -286,36 +287,36 @@ public class SimulationPanel extends JPanel {
 
 			}
 		});
-		this.add(plot3DButton, "wrap para");
+		this.add(plot3DButton, "gapright para");
 
-//		//// Torture test button
-//		tortureButton = new JButton("Torture test");
-//		tortureButton.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				int selected = simulationTable.getSelectedRow();
-//				if (selected < 0) {
-//					return;
-//				}
-//				selected = simulationTable.convertRowIndexToModel(selected);
-//				simulationTable.clearSelection();
-//				simulationTable.addRowSelectionInterval(selected, selected);
-//
-//
-//				Simulation sim = document.getSimulations().get(selected);
-//
-//				if (!sim.hasSimulationData()) {
-//					new SimulationRunDialog(SwingUtilities.getWindowAncestor(
-//							SimulationPanel.this), document, sim).setVisible(true);
-//				}
-//
-//				fireMaintainSelection();
-//
-//				openDialog(true, sim);
-//
-//			}
-//		});
-//		this.add(tortureButton, "wrap para");
+		//// Torture test button
+		tortureButton = new JButton("Torture test");
+		tortureButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int selected = simulationTable.getSelectedRow();
+				if (selected < 0) {
+					return;
+				}
+				selected = simulationTable.convertRowIndexToModel(selected);
+				simulationTable.clearSelection();
+				simulationTable.addRowSelectionInterval(selected, selected);
+
+
+				Simulation sim = document.getSimulations().get(selected);
+
+				if (!sim.hasSimulationData()) {
+					new SimulationRunDialog(SwingUtilities.getWindowAncestor(
+							SimulationPanel.this), document, sim).setVisible(true);
+				}
+
+				fireMaintainSelection();
+
+				// Switch to torture tab and pass it the sim here...
+
+			}
+		});
+		this.add(tortureButton, "wrap para");
 
 
 
@@ -644,16 +645,16 @@ public class SimulationPanel extends JPanel {
 			deleteButton.setEnabled(false);
 			plotButton.setEnabled(false);
 			plot3DButton.setEnabled(false);
-//			tortureButton.setEnabled(false);
+			tortureButton.setEnabled(false);
 		} else {
 			if (selection.length > 1) {
 				plotButton.setEnabled(false);
 				plot3DButton.setEnabled(false);
-//				tortureButton.setEnabled(false);
+				tortureButton.setEnabled(false);
 			} else {
 				plotButton.setEnabled(true);
 				plot3DButton.setEnabled(true);
-//				tortureButton.setEnabled(true);
+				tortureButton.setEnabled(true);
 			}
 			editButton.setEnabled(true);
 			runButton.setEnabled(true);

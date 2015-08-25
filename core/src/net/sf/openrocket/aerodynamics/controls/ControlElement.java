@@ -10,7 +10,7 @@ import net.sf.openrocket.simulation.listeners.flightcomputer.IControllable;
  * @author Chris Andre
  */
 
-public abstract class ControlElement implements IControllable {
+public abstract class ControlElement {
     protected double u;
     private double visRad;
     public ControlElement() {

@@ -5,6 +5,7 @@ import net.sf.openrocket.aerodynamics.controls.ElementType;
 import net.sf.openrocket.aerodynamics.controls.InactiveElement;
 import net.sf.openrocket.database.ComponentPresetDatabase;
 import net.sf.openrocket.preset.ComponentPreset;
+import net.sf.openrocket.simulation.listeners.flightcomputer.IControllable;
 import net.sf.openrocket.util.Coordinate;
 
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.Collection;
  * @author Chris Andre
  */
 
-public class ControlElementSet extends ExternalComponent {
+public class ControlElementSet extends ExternalComponent implements IControllable {
     protected int num = 3;
     protected double indiv_size = 0.05;
     protected boolean deployed = true;
@@ -30,6 +31,16 @@ public class ControlElementSet extends ExternalComponent {
         elements = new ControlElement[num];
         setElementType(ElementType.INACTIVE);
         length = 0.01;
+    }
+
+    @Override
+    public void setControl(double[] u) {
+        if (elements.length != u.length) {
+            return;
+        }
+        for (int i = 0; i < elements.length; i++) {
+            elements[i].setControl(u[i]);
+        }
     }
 
     // Properties

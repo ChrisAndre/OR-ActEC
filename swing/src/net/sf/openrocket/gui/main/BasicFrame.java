@@ -198,39 +198,59 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		
 		log.debug("Constructing the BasicFrame UI");
 		
-		// The main vertical split pane
-		JSplitPane vertical = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true);
-		vertical.setResizeWeight(0.5);
-		this.add(vertical);
+//		// The main vertical split pane
+//		JSplitPane vertical = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true);
+//		vertical.setResizeWeight(0.5);
+//		this.add(vertical);
+		JSplitPane verticalDesign = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true);
+		JSplitPane verticalMotor = new JSplitPane(JSplitPane.VERTICAL_SPLIT, true);
+		verticalDesign.setResizeWeight(0.5);
+		verticalMotor.setResizeWeight(0.5);
+
 		
-		
-		// The top tabbed pane
+		// The top tabbed pane - CTA: Not anymore!
 		tabbedPane = new JTabbedPane();
 		//// Rocket design
-		tabbedPane.addTab(trans.get("BasicFrame.tab.Rocketdesign"), null, designTab());
+//		tabbedPane.addTab(trans.get("BasicFrame.tab.Rocketdesign"), null, designTab());
 		//// Flight configurations
-		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, new FlightConfigurationPanel(document));
+//		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, new FlightConfigurationPanel(document));
 		//// Flight simulations
 //		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, simulationPanel);
-		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, new SplitSim3DViewportPanel(document));
+//		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, new SplitSim3DViewportPanel(document));
 		//// Torture test simulations
-		tabbedPane.addTab("Torture Test", null, torturePanel);
+//		tabbedPane.addTab("Torture Test", null, torturePanel);
 		
 		// Add change listener to catch when the tabs are changed.  This is to run simulations 
 		// automagically when the simulation tab is selected.
 		tabbedPane.addChangeListener(new BasicFrame_changeAdapter(this));
 		
 		
-		vertical.setTopComponent(tabbedPane);
-		
+//		vertical.setTopComponent(tabbedPane);
+
+		// CTA: We redo everything here...
+		rocketpanel = new RocketPanel(document);
+		RocketPanel rocketpanelMotor = new RocketPanel(document);
+		verticalDesign.setTopComponent(designTab());
+		verticalDesign.setBottomComponent(rocketpanel);
+		tabbedPane.addTab(trans.get("BasicFrame.tab.Rocketdesign"), null, verticalDesign);
+		verticalMotor.setTopComponent(new FlightConfigurationPanel(document));
+		verticalMotor.setBottomComponent(rocketpanelMotor);
+		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, verticalMotor);
+		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, new SplitSim3DViewportPanel(document));
+		tabbedPane.addTab("Torture Test", null, torturePanel);
+		verticalDesign.setDividerLocation(0.4);
+		verticalMotor.setDividerLocation(0.4);
+		rocketpanel.setSelectionModel(tree.getSelectionModel());
+		rocketpanelMotor.setSelectionModel(tree.getSelectionModel());
+		this.add(tabbedPane);
 		
 		
 		//  Bottom segment, rocket figure
 		
-		rocketpanel = new RocketPanel(document);
-		vertical.setBottomComponent(rocketpanel);
+//		rocketpanel = new RocketPanel(document);
+//		vertical.setBottomComponent(rocketpanel);
 		
-		rocketpanel.setSelectionModel(tree.getSelectionModel());
+//		rocketpanel.setSelectionModel(tree.getSelectionModel());
 		
 		
 		createMenu();
@@ -255,13 +275,13 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		
 		// Remember changed size
 		GUIUtil.rememberWindowSize(this);
-		
+
 		this.setLocationByPlatform(true);
-		
+
 		GUIUtil.setWindowIcons(this);
 		
 		this.validate();
-		vertical.setDividerLocation(0.4);
+//		vertical.setDividerLocation(0.4);
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		addWindowListener(new WindowAdapter() {
 			@Override
