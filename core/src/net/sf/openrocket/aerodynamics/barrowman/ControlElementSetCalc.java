@@ -36,8 +36,8 @@ public class ControlElementSetCalc extends RocketComponentCalc {
         }
         double mx = 0.0, my = 0.0;
         for (int i = 0; i < ces.getElementCount(); i++) {
-            mx += elem_forces[i] * Math.sin(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
-            my += -elem_forces[i] * Math.cos(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
+            mx += -elem_forces[i] * Math.cos(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
+            my += -elem_forces[i] * Math.sin(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
         }
         forces.setCMoment(new Coordinate(mx, my, 0.0));
     }

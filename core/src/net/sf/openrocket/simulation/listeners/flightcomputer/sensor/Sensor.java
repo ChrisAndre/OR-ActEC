@@ -13,6 +13,6 @@ import net.sf.openrocket.simulation.listeners.SimulationListener;
  */
 
 public abstract class Sensor extends AbstractSimulationListener {
-    public abstract double[] read(FlightConditions fc, AtmosphericConditions ac);
+    public abstract double[] read();
     public abstract void reset();
 }

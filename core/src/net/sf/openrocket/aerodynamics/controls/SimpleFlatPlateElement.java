@@ -18,7 +18,7 @@ public class SimpleFlatPlateElement extends ControlElement {
         u = 0.0;
     }
     public SimpleFlatPlateElement() {
-        this(0.03*0.03);
+        this(0.09*0.09);
     }
     @Override
     public double calculatePressureDragForce(FlightConditions conditions,

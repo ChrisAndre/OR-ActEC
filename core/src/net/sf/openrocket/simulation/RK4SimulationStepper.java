@@ -349,8 +349,8 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 		
 		store.linearAcceleration = store.thetaRotation.rotateZ(store.linearAcceleration);
 
-		store.linearAcceleration = store.linearAcceleration.add(store.forces.getForce().multiply(1.0/store.massData.getCG().weight)); // CTA - add force overrides
-		store.linearAcceleration = store.linearAcceleration.add(store.forces.getCForce().multiply(dynP * refArea/store.massData.getCG().weight)); // CTA - add force overrides
+//		store.linearAcceleration = store.linearAcceleration.add(store.forces.getForce().multiply(1.0/store.massData.getCG().weight)); // CTA - add force overrides
+//		store.linearAcceleration = store.linearAcceleration.add(store.forces.getCForce().multiply(dynP * refArea/store.massData.getCG().weight)); // CTA - add force overrides
 
 		// Convert into rocket world coordinates
 		store.linearAcceleration = status.getRocketOrientationQuaternion().rotate(store.linearAcceleration);
@@ -400,11 +400,17 @@ public class RK4SimulationStepper extends AbstractSimulationStepper {
 
 			// CTA: Add on moment overrides
 			Coordinate moment = store.forces.getMoment();
-			Coordinate angAccelAdd = new Coordinate(moment.x / store.massData.getLongitudinalInertia(), moment.y / store.massData.getLongitudinalInertia(), moment.z / store.massData.getRotationalInertia());
+			Coordinate angAccelAdd = new Coordinate(
+					moment.x / store.massData.getLongitudinalInertia(),
+					moment.y / store.massData.getLongitudinalInertia(),
+					moment.z / store.massData.getRotationalInertia());
 			store.angularAcceleration = store.angularAcceleration.add(angAccelAdd);
 			// CTA: Add on pressure-scaled moment overrides
 			moment = store.forces.getCMoment().multiply(dynP * refArea * refLength);
-			angAccelAdd = new Coordinate(moment.x / store.massData.getLongitudinalInertia(), moment.y / store.massData.getLongitudinalInertia(), moment.z / store.massData.getRotationalInertia());
+			angAccelAdd = new Coordinate(
+					moment.x / store.massData.getLongitudinalInertia(),
+					moment.y / store.massData.getLongitudinalInertia(),
+					moment.z / store.massData.getRotationalInertia());
 			store.angularAcceleration = store.angularAcceleration.add(angAccelAdd);
 
 			store.rollAcceleration = store.angularAcceleration.z;

@@ -405,6 +405,24 @@ public class Display extends JPanel implements GLEventListener {
 
 	public void drawPoints(final GLAutoDrawable drawable) {
 
+
+		// CTA - reference axes points
+		Coordinate x = new Coordinate(1,0,0);
+		Coordinate y = new Coordinate(0,1,0);
+		Coordinate z = new Coordinate(0,0,1);
+		double[] cx = new double[] {1, 0, 0};
+		double[] cy = new double[] {0, 1, 0};
+		double[] cz = new double[] {0, 0, 1};
+		Coordinate[] cdts = new Coordinate[] {x, y, z};
+		double[][] clrs = new double[][] {cx, cy, cz};
+		for (int i = 0; i < 3; i++) {
+			gl.glColor3d(clrs[i][0], clrs[i][1], clrs[i][2]);
+			gl.glPushMatrix();
+			gl.glTranslated(cdts[i].x, cdts[i].y, cdts[i].z);
+			glu.gluSphere(q, .007 * viewDist, 8, 5);
+			gl.glPopMatrix();
+		}
+
 		gl.glColor3d(1, 0, 0);
 
 		for (final Coordinate c : impact) {
@@ -437,27 +455,23 @@ public class Display extends JPanel implements GLEventListener {
 		glu.gluCylinder(q, .15, 0, .3, 20, 1);
 		gl.glTranslated(0, 0, -.7);
 
-//		// Red X
-//		gl.glColor3d(0.5, 0.1, 0.1);
-////		GLUquadric rot = glu.gluNewQuadric();
-//		gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
-//		glu.gluCylinder(q, .05, .05, .7, 10, 10);
-//		gl.glTranslated(0, 0, .7);
-//		glu.gluCylinder(q, .15, 0, .3, 20, 1);
-//		gl.glTranslated(0, 0, -.7);
-//
-//		// Green Y
-//		gl.glColor3d(0.1, 0.5, 0.1);
-////		rot = glu.gluNewQuadric();
-//		gl.glRotatef(90.0f, -1.0f, 0.0f, 0.0f);
-//		glu.gluCylinder(q, .05, .05, .7, 10, 10);
-//		gl.glTranslated(0, 0, .7);
-//		glu.gluCylinder(q, .15, 0, .3, 20, 1);
-//		gl.glTranslated(0, 0, -.7);
-//
-//		gl.glRotatef(q, );
-//
-////		glu.gluNewQuadric();
+		// Red X
+		gl.glColor3d(0.5, 0.1, 0.1);
+		gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+		glu.gluCylinder(q, .05, .05, .7, 10, 10);
+		gl.glTranslated(0, 0, .7);
+		glu.gluCylinder(q, .15, 0, .3, 20, 1);
+		gl.glTranslated(0, 0, -.7);
+		gl.glRotatef(-90.0f, 0.0f, 1.0f, 0.0f);
+
+		// Green Y
+		gl.glColor3d(0.1, 0.5, 0.1);
+		gl.glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
+		glu.gluCylinder(q, .05, .05, .7, 10, 10);
+		gl.glTranslated(0, 0, .7);
+		glu.gluCylinder(q, .15, 0, .3, 20, 1);
+		gl.glTranslated(0, 0, -.7);
+		gl.glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
 	}
 
 	public void drawGroundGrid(final GLAutoDrawable drawable) {

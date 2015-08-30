@@ -29,30 +29,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FlightComputer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputer.java">
+      <file leaf-file-name="BrickedComputer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/BrickedComputer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.37775445">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1322#1339#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrickedComputer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/BrickedComputer.java">
+      <file leaf-file-name="ZenithAngle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/ZenithAngle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44853738">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Altimeter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Altimeter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/core/mutators/ParachuteFailure.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/src/com/billkuker/rocketry/dispersion/core/mutators/Util.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/analysys/ImpactPoints.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/vizualization/DensityRenderer.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/dispersion/vizualization/PathRenderer.java" />
@@ -110,23 +117,25 @@
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/flightcomputer/FlightComputerType.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Engine.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SplitSim3DViewportPanel.java" />
-        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/FlightConditions.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/BasicFrame.java" />
         <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/main/SimulationPanel.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/ISensor.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/PureListenerGroup.java" />
-        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Sensor.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputer.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/IControllable.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java" />
+        <option value="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Sensor.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/ZenithAngle.java" />
+        <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Altimeter.java" />
         <option value="$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/BrickedComputer.java" />
       </list>
     </option>
@@ -148,8 +157,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
     <option name="y" value="24" />
-    <option name="width" value="1631" />
-    <option name="height" value="1026" />
+    <option name="width" value="1871" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -162,7 +171,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -174,8 +183,348 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="swing">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="gui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dispersion">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="simulation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="simulation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="listeners">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="simulation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="listeners">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flightcomputer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="simulation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="listeners">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flightcomputer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sensor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="aerodynamics">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="net/sf/openrocket">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="aerodynamics">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controls">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,223 +543,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listeners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listeners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flightcomputer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listeners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flightcomputer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sensor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocketcomponent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aerodynamics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aerodynamics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openrocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,6 +562,7 @@
     <property name="SearchEverywhereHistoryKey" value="LaunchLug&#9;FILE&#9;file:///home/chris/Code/openrocket/core/src/net/sf/openrocket/preset/loader/LaunchLugLoader.java&#10;getShapesSide&#9;PSI&#9;JAVA://net.sf.openrocket.gui.rocketfigure.LaunchLugShapes#getShapesSide" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -723,19 +858,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -836,41 +958,47 @@
       <workItem from="1440354694480" duration="8002000" />
       <workItem from="1440369137781" duration="566000" />
       <workItem from="1440372914569" duration="10668000" />
+      <workItem from="1440816897598" duration="36000" />
+      <workItem from="1440860253709" duration="615000" />
+      <workItem from="1440879449643" duration="1054000" />
+      <workItem from="1440949826644" duration="3045000" />
+      <workItem from="1440956300222" duration="4039000" />
+      <workItem from="1440961166024" duration="1036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190725000" />
+    <option name="totallyTimeSpent" value="200550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1631" height="1026" extended-state="6" />
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5792235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39877924" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21753073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5792235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -889,7 +1017,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -898,167 +1026,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Quaternion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60996747">
-          <caret line="242" column="47" selection-start-line="242" selection-start-column="47" selection-end-line="242" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/QuaternionMultiply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7746479">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Transformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.843987">
-          <caret line="258" column="4" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/WorldCoordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31744313">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Rotation2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AbstractAerodynamicCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2340195">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15059589">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/util/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33261105">
-          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/FlightConditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019501625">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2026002">
-          <caret line="119" column="62" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4951246">
-          <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/.settings/org.eclipse.core.resources.prefs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/sky/lake.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/sky/miramar/miramar_bk.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/utils/ComponentPresetEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1711807">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/OpenRocket Swing.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35102925">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownHtmlEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10089686">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18093175">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/resources/datafiles/flame/c-color.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21451788">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/AccelerationData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2340195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.55363">
-          <caret line="715" column="8" selection-start-line="715" selection-start-column="8" selection-end-line="715" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019501625">
-          <caret line="261" column="4" selection-start-line="261" selection-start-column="4" selection-end-line="261" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/dispersion/Sample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2340195">
@@ -1070,13 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4539545">
           <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.053087756">
-          <caret line="121" column="120" selection-start-line="121" selection-start-column="120" selection-end-line="121" selection-end-column="120" />
         </state>
       </provider>
     </entry>
@@ -1133,201 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="306" column="35" selection-start-line="306" selection-start-column="35" selection-end-line="306" selection-end-column="35" />
-          <folding>
-            <element signature="e#1192#1298#0" expanded="false" />
-            <element signature="class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#TOP#0;class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#MIDDLE#0;class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#BOTTOM#0;class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#AFTER#0;class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#ABSOLUTE#0;class#Position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#mutex#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#parent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#children#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#length#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#relativePosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#position#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;field#invalidator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#RocketComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#RocketComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getComponentName#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getComponentMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getComponentCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getLongitudinalUnitInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getRotationalUnitInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#allowsChildren#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isCompatible#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isCompatible#1;class#RocketComponent#0" expanded="false" />
-            <element signature="method#isCompatible#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getComponentBounds#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isAerodynamic#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isMassive#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#shiftCoordinates#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#shiftCoordinates#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#componentChanged#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#componentChanged#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#toString#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#toDebugString#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#toDebugString#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#toDebugString#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#copy#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#copy#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#copyWithOriginalID#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#copyWithOriginalID#0;class#RocketComponent#0" expanded="false" />
-            <element signature="e#12972#13036#0" expanded="false" />
-            <element signature="docComment;method#getAppearance#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setAppearance#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setAppearance#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getColor#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getColor#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setColor#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setColor#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getLineStyle#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setLineStyle#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getOverrideMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getOverrideMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setOverrideMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setOverrideMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isMassOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#isMassOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setMassOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setMassOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getOverrideCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getOverrideCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getOverrideCGX#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getOverrideCGX#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setOverrideCGX#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setOverrideCGX#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isCGOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#isCGOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setCGOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setCGOverridden#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getOverrideSubcomponents#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getOverrideSubcomponents#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setOverrideSubcomponents#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setOverrideSubcomponents#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#isOverrideSubcomponentsEnabled#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#isOverrideSubcomponentsEnabled#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getName#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getName#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setName#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setName#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getComment#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getComment#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setComment#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setComment#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getPresetComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getPresetType#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#loadPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#loadPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#loadFromPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#loadFromPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#clearPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#clearPreset#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getID#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#newID#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#newID#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getLength#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getLength#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getRelativePosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getRelativePosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setRelativePosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setRelativePosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#asPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#asPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#setPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#setPositionValue#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#toAbsolute#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#toAbsolute#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#toRelative#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#toRelative#0;class#RocketComponent#0" expanded="false" />
-            <element signature="e#30330#30397#0" expanded="false" />
-            <element signature="docComment;method#getTotalLength#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getTotalLength#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getSectionMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getSectionMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getLongitudinalInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getLongitudinalInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getRotationalInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getRotationalInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#addChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#addChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#addChild#1;class#RocketComponent#0" expanded="false" />
-            <element signature="method#addChild#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#removeChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#removeChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#removeChild#1;class#RocketComponent#0" expanded="false" />
-            <element signature="method#removeChild#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#moveChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#moveChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#fireAddRemoveEvent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#fireAddRemoveEvent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getChildCount#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getChild#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getChildren#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getChildPosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getChildPosition#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getParent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getParent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getRoot#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getRoot#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getRocket#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getRocket#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getStage#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getStage#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#getStageNumber#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getStageNumber#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#findComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#findComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getPreviousComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#getNextComponent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="e#42505#42544#0" expanded="false" />
-            <element signature="docComment;method#addComponentChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#addComponentChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#removeComponentChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#removeComponentChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#addChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#addChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#removeChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#removeChangeListener#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#fireComponentChangeEvent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#fireComponentChangeEvent#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#fireComponentChangeEvent#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#checkState#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#checkState#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#checkComponentStructure#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#checkComponentStructure#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#containsExact#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#iterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#iterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#iterator#1;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#equals#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#equals#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#accept#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#addBound#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#addBound#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#ringCG#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#ringVolume#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#ringMass#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#ringLongitudinalUnitInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#ringRotationalUnitInertia#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;method#copyFrom#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#copyFrom#0;class#RocketComponent#0" expanded="false" />
-            <element signature="docComment;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#RocketComponentIterator#0;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#hasNext#0;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#next#0;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#checkID#0;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-            <element signature="method#remove#0;class#RocketComponentIterator#0;class#RocketComponent#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,9 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04442037">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,52 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/AbstractSimulationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6294691">
-          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Sensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19501625">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29252437">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.156013">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,15 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0780065">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19501625">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,40 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1773399">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32019705">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/PureListenerGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54022986">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1322#1339#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1471,14 +1142,365 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21451788">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4155299">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/EventQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.547744">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/AerodynamicForces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11437566">
+          <caret line="349" column="79" selection-start-line="349" selection-start-column="79" selection-end-line="349" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/BarrowmanCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.254984">
+          <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/FlightConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2665267">
+          <caret line="131" column="40" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#refLength#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#refArea#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#aoa#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#sinAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#sincAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#theta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#mach#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#beta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;field#rollRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setAirVelocity#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#FlightConditions#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#FlightConditions#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setReference#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setRefLength#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setRefLength#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getRefLength#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setRefArea#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setRefArea#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getRefArea#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setAOA#1;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setAOA#1;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getSinAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getSincAOA#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setTheta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setTheta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getTheta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setMach#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setMach#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getMach#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getVelocity#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setVelocity#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getBeta#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getRollRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setRollRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setRollRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setPitchRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setYawRate#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getPitchCenter#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setPitchCenter#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setPitchCenter#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getAtmosphericConditions#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#setAtmosphericConditions#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#setAtmosphericConditions#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#getModID#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#toString#0;class#FlightConditions#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#clone#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#equals#0;class#FlightConditions#0" expanded="false" />
+            <element signature="method#fireChangeEvent#0;class#FlightConditions#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/AccelerationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09443861">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.024134">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightDataBranch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326338">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightDataType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3210913">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/FlightEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18887722">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.099685">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStepper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.290661">
+          <caret line="406" column="83" selection-start-line="406" selection-start-column="83" selection-end-line="406" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/dispersion/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.435467">
+          <caret line="467" column="36" selection-start-line="467" selection-start-column="36" selection-end-line="467" selection-end-column="36" />
+          <folding>
+            <element signature="initializer##0;class#Display#0" expanded="false" />
+            <element signature="e#1924#1952#0" expanded="false" />
+            <element signature="initializer##1;class#Display#0" expanded="false" />
+            <element signature="e#2797#2861#0" expanded="false" />
+            <element signature="initializer##2;class#Display#0" expanded="false" />
+            <element signature="method#getEventColor#0;class#Display#0" expanded="false" />
+            <element signature="method#addSimulation#0;class#Display#0" expanded="false" />
+            <element signature="e#4155#4227#0" expanded="false" />
+            <element signature="method#Display#0;class#Display#0" expanded="false" />
+            <element signature="method#initGLCanvas#0;class#Display#0" expanded="false" />
+            <element signature="method#setupMouseListeners#0;class#Display#0" expanded="false" />
+            <element signature="class#5595:6913" expanded="false" />
+            <element signature="method#mousePressed#0;class#5595:6913" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#5595:6913" expanded="false" />
+            <element signature="e#6066#6106#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#5595:6913" expanded="false" />
+            <element signature="e#6299#6360#0" expanded="false" />
+            <element signature="method#paintImmediately#0;class#Display#0" expanded="false" />
+            <element signature="method#paintImmediately#1;class#Display#0" expanded="false" />
+            <element signature="method#display#0;class#Display#0" expanded="false" />
+            <element signature="docComment;method#drawUpArrow#0;class#Display#0" expanded="false" />
+            <element signature="method#drawGroundGrid#0;class#Display#0" expanded="false" />
+            <element signature="method#dispose#0;class#Display#0" expanded="false" />
+            <element signature="method#init#0;class#Display#0" expanded="false" />
+            <element signature="method#reshape#0;class#Display#0" expanded="false" />
+            <element signature="class#Bounds#0;class#Display#0" expanded="false" />
+            <element signature="method#main#0;class#Display#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/barrowman/ControlElementSetCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6789087">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ElementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18887722">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/SimpleFlatPlateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45714286">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/DragPlateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/AbstractSimulationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05666317">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/RK4SimulationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07555089">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/core/lib/guice-3.0.jar!/com/google/inject/internal/cglib/reflect/$FastConstructor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5172415">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/core/lib/guice-3.0.jar!/com/google/inject/internal/DefaultConstructionProxyFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.27272728">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20776495">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/SimulationListenerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/simulation/SimulationWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4795383">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/document/Simulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19622245">
+          <caret line="350" column="0" selection-start-line="350" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/BasicEventSimulationEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19622245">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/aerodynamics/controls/ControlElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18887722">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/rocketcomponent/ControlElementSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13221405">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/PureListenerGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13221405">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/FlightComputer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84889823">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/ZenithAngle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/sensor/Altimeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/SimulationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.4">
+          <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+          <folding>
+            <element signature="e#7083#7084#0" expanded="true" />
+            <element signature="e#7101#7102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/simulation/listeners/flightcomputer/BrickedComputer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44853738">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.37775445">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1537,7 +1559,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>OpenRocket Test Libraries</last-edited>
+          <last-edited>OpenRocket Core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

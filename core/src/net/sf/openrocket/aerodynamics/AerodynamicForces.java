@@ -70,14 +70,14 @@ public class AerodynamicForces implements Cloneable, Monitorable {
 	private double yawDampingMoment = Double.NaN;
 
 	// CTA - Rocket-frame moment and force additives
-	private Coordinate force = null;
-	public void setForce(Coordinate force) {
-		this.force = force;
-		modID++;
-	}
-	public Coordinate getForce() {
-		return this.force;
-	}
+//	private Coordinate force = null;
+//	public void setForce(Coordinate force) {
+//		this.force = force;
+//		modID++;
+//	}
+//	public Coordinate getForce() {
+//		return this.force;
+//	}
 	private Coordinate moment = null;
 	public void setMoment(Coordinate moment) {
 		this.moment = moment;
@@ -87,14 +87,14 @@ public class AerodynamicForces implements Cloneable, Monitorable {
 		return this.moment;
 	}
 	// CTA - Rocket-frame moment and force additives (dynamic pressure scaled)
-	private Coordinate cforce = null;
-	public void setCForce(Coordinate cforce) {
-		this.cforce = cforce;
-		modID++;
-	}
-	public Coordinate getCForce() {
-		return this.cforce;
-	}
+//	private Coordinate cforce = null;
+//	public void setCForce(Coordinate cforce) {
+//		this.cforce = cforce;
+//		modID++;
+//	}
+//	public Coordinate getCForce() {
+//		return this.cforce;
+//	}
 	private Coordinate cmoment = null;
 	public void setCMoment(Coordinate cmoment) {
 		this.cmoment = cmoment;
@@ -283,9 +283,9 @@ public class AerodynamicForces implements Cloneable, Monitorable {
 		setYawDampingMoment(Double.NaN);
 
 		// CTA overrides
-		setForce(null);
+//		setForce(null);
 		setMoment(null);
-		setCForce(null);
+//		setCForce(null);
 		setCMoment(null);
 	}
 	
@@ -310,9 +310,9 @@ public class AerodynamicForces implements Cloneable, Monitorable {
 		setYawDampingMoment(0);
 
 		// CTA overrides
-		setForce(Coordinate.NUL);
+//		setForce(Coordinate.NUL);
 		setMoment(Coordinate.NUL);
-		setCForce(Coordinate.NUL);
+//		setCForce(Coordinate.NUL);
 		setCMoment(Coordinate.NUL);
 	}
 
@@ -352,8 +352,9 @@ public class AerodynamicForces implements Cloneable, Monitorable {
 				MathUtil.equals(this.getYawDampingMoment(), other.getYawDampingMoment()) &&
 				this.getCP().equals(other.getCP()) &&
 		        /* Overrides */
-		        this.getForce().equals(other.getForce()) &&
-		        this.getMoment().equals(other.getMoment()));
+//		        this.getForce().equals(other.getForce()) &&
+		        this.getMoment().equals(other.getMoment()) &&
+		        this.getCMoment().equals(other.getCMoment()));
 	}
 	
 	@Override
