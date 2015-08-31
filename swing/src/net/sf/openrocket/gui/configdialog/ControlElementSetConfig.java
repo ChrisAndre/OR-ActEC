@@ -3,7 +3,7 @@ package net.sf.openrocket.gui.configdialog;
 import javax.swing.*;
 
 import net.miginfocom.swing.MigLayout;
-import net.sf.openrocket.aerodynamics.controls.ElementType;
+import net.sf.openrocket.ActEC.controls.ElementType;
 import net.sf.openrocket.document.OpenRocketDocument;
 import net.sf.openrocket.gui.SpinnerEditor;
 import net.sf.openrocket.gui.adaptors.BooleanModel;
@@ -12,9 +12,7 @@ import net.sf.openrocket.gui.adaptors.EnumModel;
 import net.sf.openrocket.gui.adaptors.IntegerModel;
 import net.sf.openrocket.gui.components.BasicSlider;
 import net.sf.openrocket.gui.components.UnitSelector;
-import net.sf.openrocket.material.Material;
 import net.sf.openrocket.rocketcomponent.RocketComponent;
-import net.sf.openrocket.startup.Application;
 import net.sf.openrocket.unit.UnitGroup;
 
 /**

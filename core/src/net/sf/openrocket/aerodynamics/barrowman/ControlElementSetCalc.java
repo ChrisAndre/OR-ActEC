@@ -4,8 +4,9 @@ import net.sf.openrocket.aerodynamics.AerodynamicForces;
 import net.sf.openrocket.aerodynamics.BarrowmanCalculator;
 import net.sf.openrocket.aerodynamics.FlightConditions;
 import net.sf.openrocket.aerodynamics.WarningSet;
-import net.sf.openrocket.aerodynamics.controls.ControlElement;
-import net.sf.openrocket.rocketcomponent.ControlElementSet;
+import net.sf.openrocket.ActEC.controls.ControlElement;
+import net.sf.openrocket.ActEC.ControlElementSet;
+import net.sf.openrocket.aerodynamics.barrowman.RocketComponentCalc;
 import net.sf.openrocket.rocketcomponent.RocketComponent;
 import net.sf.openrocket.util.Coordinate;
 

@@ -1,5 +1,6 @@
 package net.sf.openrocket.gui.rocketfigure;
 
+import net.sf.openrocket.ActEC.ControlElementSet;
 import net.sf.openrocket.util.Coordinate;
 import net.sf.openrocket.util.Transformation;
 
@@ -12,7 +13,7 @@ import java.awt.geom.Rectangle2D;
  */
 public class ControlElementSetShapes extends RocketComponentShapes {
     public static Shape[] getShapesSide(net.sf.openrocket.rocketcomponent.RocketComponent component, Transformation transformation) {
-        net.sf.openrocket.rocketcomponent.ControlElementSet set = (net.sf.openrocket.rocketcomponent.ControlElementSet) component;
+        ControlElementSet set = (ControlElementSet) component;
         double length = set.getLength();
         double radius = set.getBodyRadius();
         Coordinate[] start = transformation.transform(set.toAbsolute(new Coordinate(0,0,0)));
@@ -23,7 +24,7 @@ public class ControlElementSetShapes extends RocketComponentShapes {
         return s;
     }
     public static Shape[] getShapesBack(net.sf.openrocket.rocketcomponent.RocketComponent component, Transformation transformation) {
-        net.sf.openrocket.rocketcomponent.ControlElementSet set = (net.sf.openrocket.rocketcomponent.ControlElementSet) component;
+        ControlElementSet set = (ControlElementSet) component;
         double length = set.getLength();
         double radius = set.getBodyRadius();
         Coordinate[] start = transformation.transform(set.toAbsolute(new Coordinate(0,0,0)));

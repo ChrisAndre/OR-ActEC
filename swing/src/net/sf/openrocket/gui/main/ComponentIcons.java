@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
+import net.sf.openrocket.ActEC.ControlElementSet;
 import net.sf.openrocket.l10n.Translator;
 import net.sf.openrocket.rocketcomponent.*;
 import net.sf.openrocket.rocketcomponent.MassComponent.MassComponentType;
