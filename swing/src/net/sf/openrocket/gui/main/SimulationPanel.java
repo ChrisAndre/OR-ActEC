@@ -40,18 +40,16 @@ import net.sf.openrocket.gui.adaptors.ColumnTableModel;
 import net.sf.openrocket.gui.adaptors.ColumnTableRowSorter;
 import net.sf.openrocket.gui.adaptors.ValueColumn;
 import net.sf.openrocket.gui.components.StyledLabel;
-import net.sf.openrocket.gui.dispersion.Display;
+import net.sf.openrocket.gui.ActEC.dispersion.Display;
 import net.sf.openrocket.gui.simulation.SimulationEditDialog;
 import net.sf.openrocket.gui.simulation.SimulationRunDialog;
 import net.sf.openrocket.gui.simulation.SimulationWarningDialog;
 import net.sf.openrocket.gui.util.Icons;
-import net.sf.openrocket.gui.util.SwingPreferences;
 import net.sf.openrocket.l10n.Translator;
 import net.sf.openrocket.rocketcomponent.ComponentChangeEvent;
 import net.sf.openrocket.rocketcomponent.ComponentChangeListener;
 import net.sf.openrocket.rocketcomponent.Configuration;
 import net.sf.openrocket.simulation.FlightData;
-import net.sf.openrocket.simulation.FlightEvent;
 import net.sf.openrocket.startup.Application;
 import net.sf.openrocket.startup.Preferences;
 import net.sf.openrocket.unit.UnitGroup;
@@ -89,14 +87,13 @@ public class SimulationPanel extends JPanel {
 
 	private Display display;
 
-	public void passDisplayObject(Display dsp) {
-		this.display = dsp;
-	}
-
-	public SimulationPanel(OpenRocketDocument doc) {
+	public SimulationPanel(OpenRocketDocument doc, Display dsp) {
+//		super(new MigLayout("fill", "[grow][][][][][][grow]"));
 		super(new MigLayout("fill", "[grow][][][][][][grow]"));
+//		super(new MigLayout(""));
 
 		this.document = doc;
+		this.display = dsp;
 
 
 
@@ -122,7 +119,8 @@ public class SimulationPanel extends JPanel {
 					openDialog(false, sim);
 				}
 			});
-			this.add(button, "skip 1, gapright para");
+//			this.add(button, "skip 1, gapright para");
+			this.add(button, "gapright para");
 		}
 
 		//// Edit simulation button
@@ -312,7 +310,8 @@ public class SimulationPanel extends JPanel {
 
 				fireMaintainSelection();
 
-				// Switch to torture tab and pass it the sim here...
+				// Set the global engine's simnum from here... TODO CTA
+
 
 			}
 		});
@@ -579,6 +578,7 @@ public class SimulationPanel extends JPanel {
 		ColumnTableRowSorter simulationTableSorter = new ColumnTableRowSorter(simulationTableModel);
 		simulationTable.setRowSorter(simulationTableSorter);
 		simulationTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+//		simulationTable.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
 		simulationTable.setDefaultRenderer(Object.class, new JLabelRenderer());
 		simulationTableModel.setColumnWidths(simulationTable.getColumnModel());
 

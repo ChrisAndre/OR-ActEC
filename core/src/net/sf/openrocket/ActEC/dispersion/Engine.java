@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
+import net.sf.openrocket.ActEC.flightcomputer.FlightComputer;
 import net.sf.openrocket.document.OpenRocketDocument;
 import net.sf.openrocket.document.Simulation;
 import net.sf.openrocket.ActEC.flightcomputer.FlightComputerType;
@@ -15,6 +16,7 @@ import net.sf.openrocket.ActEC.dispersion.mutators.Mutator;
 import net.sf.openrocket.ActEC.dispersion.mutators.RocketMutator;
 import net.sf.openrocket.ActEC.dispersion.mutators.SimulationConditionsMutator;
 import net.sf.openrocket.ActEC.dispersion.mutators.SimulationOptionsMutator;
+import net.sf.openrocket.util.ArrayList;
 
 /*
 Adapted from Bill Kuker's Dispersion project by Chris Andre
@@ -22,7 +24,8 @@ Adapted from Bill Kuker's Dispersion project by Chris Andre
 
 public class Engine {
 	final OpenRocketDocument doc;
-	final int simulationNumber;
+	int simulationNumber = 0;
+	int runNumber = 1000;
 
 	int runCount;
 	FlightComputerType fctype;
@@ -36,10 +39,10 @@ public class Engine {
 		public void sampleSimulationComplete(Sample s);
 	}
 
-	public Engine(final OpenRocketDocument doc, final int simulationNumber, final List<Mutator> mutators) {
-		this.doc = doc.copy();
-		this.simulationNumber = simulationNumber;
-		this.mutators = mutators;
+	public Engine(final OpenRocketDocument doc) {
+		this.doc = doc;
+		// Instantiate all available mutators
+		mutators = new ArrayList<Mutator>();
 	}
 
 	public void addSimListener(final SampleListener l) {
@@ -52,6 +55,7 @@ public class Engine {
 	public void setRunCount(int n) {
 		runCount = n;
 	}
+
 	public FlightComputerType getFlightComputerType() {
 		return fctype;
 	}
@@ -59,8 +63,14 @@ public class Engine {
 		fctype = type;
 	}
 
-	public void run(final int iterations) throws SimulationException {
-		for (int i = 0; i < iterations; i++) {
+	public int getSimulationNumber() { return simulationNumber; }
+	public void setSimulationNumber(int simnum) { simulationNumber = simnum; }
+
+	public int getRunNumber() { return runNumber; }
+	public void setRunNumber(int runnum) { runNumber = runnum; }
+
+	public void run() throws SimulationException {
+		for (int i = 0; i < runNumber; i++) {
 			OpenRocketDocument doc = this.doc.copy();
 			Simulation s = doc.getSimulation(simulationNumber).copy();
 
@@ -71,10 +81,14 @@ public class Engine {
 					((SimulationOptionsMutator) m).mutate(s.getOptions());
 				}
 			}
-
-			s.getOptions().setRandomSeed(r.nextInt());
-
-			s.simulate(new AbstractSimulationListener() {
+			FlightComputer fc = null;
+			try {
+				fc = fctype.getComputer();
+			}
+			catch(Exception e) {
+				//TODO Low
+			}
+			AbstractSimulationListener mutatorListener = new AbstractSimulationListener() {
 				public void startSimulation(SimulationStatus status) throws SimulationException {
 					for (Mutator m : mutators) {
 						if (m instanceof SimulationConditionsMutator) {
@@ -82,7 +96,10 @@ public class Engine {
 						}
 					}
 				}
-			});
+			};
+
+			s.getOptions().setRandomSeed(r.nextInt());
+			s.simulate(mutatorListener, fc); // TODO high: the FC cannot set control values because the document is not updated...
 
 			Sample sim = new Sample(s);
 

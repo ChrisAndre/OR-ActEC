@@ -1,13 +1,19 @@
 package net.sf.openrocket.gui.main;
 
 import net.miginfocom.swing.MigLayout;
+import net.sf.openrocket.ActEC.dispersion.Engine;
+import net.sf.openrocket.ActEC.dispersion.Sample;
+import net.sf.openrocket.ActEC.dispersion.mutators.Mutator;
+import net.sf.openrocket.ActEC.flightcomputer.FlightComputerType;
 import net.sf.openrocket.document.OpenRocketDocument;
-import net.sf.openrocket.gui.dispersion.Display;
+import net.sf.openrocket.document.Simulation;
+import net.sf.openrocket.gui.ActEC.dispersion.Display;
 
-import javax.media.opengl.GLEventListener;
-import javax.media.opengl.awt.GLJPanel;
 import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * Created by chris on 8/17/15.
@@ -16,23 +22,53 @@ import java.awt.*;
 public class TortureTestPanel extends JSplitPane {
 
     private final OpenRocketDocument document;
+    private Engine engine;
+    private Display display;
 
-    public TortureTestPanel(OpenRocketDocument doc) {
+    private JButton run;
+
+    public TortureTestPanel(OpenRocketDocument doc, Engine engine) {
         super(JSplitPane.HORIZONTAL_SPLIT, true);
         this.document = doc;
+        this.engine = engine;
         setResizeWeight(0.5);
-        setDividerLocation(0.2);
+        setDividerLocation(0.5);
+        display = new Display();
+        engine.setFlightComputerType(FlightComputerType.BRICKED_COMPUTER);
 
-        JPanel panel = new JPanel(new MigLayout("fillx, gapx 0"));
-        panel.add(new JButton("Add Mutator"), "span 4, growx, wrap");
+        run = new JButton("Run");
+        run.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.purgeSimulations();
+                run();
+            }
+        });
+
+        JPanel panel = new JPanel(new MigLayout(""));
         panel.add(new JLabel("Torture Runs: "));
         panel.add(new JSpinner());
         panel.add(new JLabel("Flight Computer: "));
         panel.add(new JComboBox<Integer>());
-        panel.add(new JButton("Run"));
+        panel.add(run);
         panel.add(new JButton("Show Log"));
 
         setLeftComponent(panel);
-        setRightComponent(new Display());
+        setRightComponent(display);
+    }
+
+    public void run() {
+        engine.addSimListener(new Engine.SampleListener() {
+            @Override
+            public void sampleSimulationComplete(Sample s) {
+                display.addSimulation(s.getSimulation());
+            }
+        });
+        try {
+            engine.run();
+        }
+        catch (Exception e) {
+            // TODO:
+        }
     }
 }

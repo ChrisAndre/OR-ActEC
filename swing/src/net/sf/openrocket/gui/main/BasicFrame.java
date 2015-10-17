@@ -62,6 +62,7 @@ import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 
 import net.miginfocom.swing.MigLayout;
+import net.sf.openrocket.ActEC.dispersion.Engine;
 import net.sf.openrocket.aerodynamics.WarningSet;
 import net.sf.openrocket.document.OpenRocketDocument;
 import net.sf.openrocket.document.OpenRocketDocumentFactory;
@@ -84,7 +85,6 @@ import net.sf.openrocket.gui.dialogs.SwingWorkerDialog;
 import net.sf.openrocket.gui.dialogs.WarningDialog;
 import net.sf.openrocket.gui.dialogs.optimization.GeneralOptimizationDialog;
 import net.sf.openrocket.gui.dialogs.preferences.PreferencesDialog;
-import net.sf.openrocket.gui.dispersion.Display;
 import net.sf.openrocket.gui.figure3d.photo.PhotoFrame;
 import net.sf.openrocket.gui.help.tours.GuidedTourSelectionDialog;
 import net.sf.openrocket.gui.main.componenttree.ComponentTree;
@@ -147,6 +147,7 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 	
 	private final OpenRocketDocument document;
 	private final Rocket rocket;
+	private final Engine engine;
 	
 	private JTabbedPane tabbedPane;
 	private RocketPanel rocketpanel;
@@ -159,7 +160,8 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 	/** Actions available for rocket modifications */
 	private final RocketActions actions;
 	
-	private SimulationPanel simulationPanel;
+//	private SimulationPanel simulationPanel;
+	private SplitSim3DViewportPanel simPanel;
 	private TortureTestPanel torturePanel;
 	
 	
@@ -181,17 +183,19 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		componentSelectionModel.setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
 		
 		// Obtain the simulation selection model that will be used
-		simulationPanel = new SimulationPanel(document);
-		simulationSelectionModel = simulationPanel.getSimulationListSelectionModel();
-		
+//		simulationPanel = new SimulationPanel(document);
+//		simulationSelectionModel = simulationPanel.getSimulationListSelectionModel();
+		simPanel = new SplitSim3DViewportPanel(document);
+		simulationSelectionModel = simPanel.getSimPanel().getSimulationListSelectionModel();
+
 		// Combine into a DocumentSelectionModel
 		selectionModel = new DocumentSelectionModel(document);
 		selectionModel.attachComponentTreeSelectionModel(componentSelectionModel);
 		selectionModel.attachSimulationListSelectionModel(simulationSelectionModel);
 
 		// Add torture test panel
-		torturePanel = new TortureTestPanel(document);
-		
+		engine = new Engine(document);
+		torturePanel = new TortureTestPanel(document, engine);
 		
 		actions = new RocketActions(document, selectionModel, this);
 		
@@ -236,7 +240,7 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 		verticalMotor.setTopComponent(new FlightConfigurationPanel(document));
 		verticalMotor.setBottomComponent(rocketpanelMotor);
 		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightconfig"), null, verticalMotor);
-		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, new SplitSim3DViewportPanel(document));
+		tabbedPane.addTab(trans.get("BasicFrame.tab.Flightsim"), null, simPanel);
 		tabbedPane.addTab("Torture Test", null, torturePanel);
 		verticalDesign.setDividerLocation(0.4);
 		verticalMotor.setDividerLocation(0.4);
@@ -1631,7 +1635,7 @@ public class BasicFrame extends JFrame implements PropertyChangeListener {
 	    JTabbedPane tabSource = (JTabbedPane) e.getSource();
 	    String tab = tabSource.getTitleAt(tabSource.getSelectedIndex());
 	    if (tab.equals(trans.get("BasicFrame.tab.Flightsim"))) {
-	      simulationPanel.activating();
+	      simPanel.getSimPanel().activating();
 	    }
 	  }
 }

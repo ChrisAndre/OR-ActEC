@@ -1,4 +1,4 @@
-package net.sf.openrocket.gui.dispersion;
+package net.sf.openrocket.gui.ActEC.dispersion;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -23,7 +23,6 @@ import javax.media.opengl.GLAutoDrawable;
 import javax.media.opengl.GLCapabilities;
 import javax.media.opengl.GLEventListener;
 import javax.media.opengl.GLProfile;
-import javax.media.opengl.awt.GLCanvas;
 import javax.media.opengl.awt.GLJPanel;
 import javax.media.opengl.fixedfunc.GLMatrixFunc;
 import javax.media.opengl.glu.GLU;
@@ -31,7 +30,6 @@ import javax.media.opengl.glu.GLUquadric;
 import javax.swing.*;
 import javax.swing.event.MouseInputAdapter;
 
-import net.miginfocom.swing.MigLayout;
 import net.sf.openrocket.document.Simulation;
 import net.sf.openrocket.gui.plot.EventGraphics;
 import net.sf.openrocket.simulation.FlightDataBranch;
@@ -119,7 +117,6 @@ public class Display extends JPanel implements GLEventListener {
 	GLU glu;
 	GLUquadric q;
 
-	//----------------------------------------------------------private final BeastKDEDensity d = new BeastKDEDensity();
 	public void purgeSimulations() {
 		simulations.clear();
 	}
@@ -244,9 +241,9 @@ public class Display extends JPanel implements GLEventListener {
 
 	@Override
 	public void paintImmediately(int x, int y, int w, int h) {
-		super.paintImmediately(x, y, w, h);
-		if (canvas != null)
-			((GLAutoDrawable) canvas).display();
+			super.paintImmediately(x, y, w, h);
+			if (canvas != null)
+				((GLAutoDrawable) canvas).display();
 	}
 
 	@Override
@@ -293,7 +290,6 @@ public class Display extends JPanel implements GLEventListener {
 
 		drawGroundGrid(drawable);
 		gl.glDisable(GL.GL_DEPTH_TEST);
-		//----------------------------------------------------------------------new DensityRenderer().draw(drawable, d);
 		gl.glEnable(GL.GL_DEPTH_TEST);
 
 		gl.glDisable(GL2.GL_FOG);
@@ -324,7 +320,7 @@ public class Display extends JPanel implements GLEventListener {
 	public void drawSimulation(final Simulation s, final boolean highlight, final double a,
 			final GLAutoDrawable drawable) {
 
-		for (int b = 0; b < s.getSimulatedData().getBranchCount(); b++) {
+		for (int b = 0; b < s.getSimulatedData().getBranchCount(); b++) { // TODO: AHA! THIS FAILS AT GETSIMDATA!
 			drawBranch(s.getSimulatedData().getBranch(b), false, a, drawable);
 		}
 

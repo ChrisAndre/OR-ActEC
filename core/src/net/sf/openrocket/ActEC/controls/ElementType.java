@@ -10,8 +10,8 @@ import java.lang.reflect.InvocationTargetException;
  */
 
 public enum ElementType {
-    INACTIVE("Inactive Control Element", InactiveElement.class),
     SIMPLEFLATPLATE("Simple Flat Plate Control Element", SimpleFlatPlateElement.class),
+    INACTIVE("Inactive Control Element", InactiveElement.class),
     DRAGPLATE("Fixed Drag Plate Control Element", DragPlateElement.class);
 
     private String name;
