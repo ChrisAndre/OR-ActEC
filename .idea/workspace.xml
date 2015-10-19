@@ -34,10 +34,12 @@
           <file leaf-file-name="Engine.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/ActEC/dispersion/Engine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4022663">
-                  <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.36818182">
+                  <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1623#1624#0" expanded="true" />
+                    <element signature="e#1642#1643#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -62,11 +64,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#1980#1981#0" expanded="false" />
-                    <element signature="e#2052#2053#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -74,8 +72,8 @@
           <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/ActEC/dispersion/Display.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4712042">
-                  <caret line="579" column="13" selection-start-line="579" selection-start-column="13" selection-end-line="579" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.31789473">
+                  <caret line="567" column="0" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
                   <folding>
                     <element signature="initializer##0;class#Display#0" expanded="false" />
                     <element signature="e#1851#1879#0" expanded="false" />
@@ -205,8 +203,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
     <option name="y" value="24" />
-    <option name="width" value="1551" />
-    <option name="height" value="876" />
+    <option name="width" value="1871" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,7 +229,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -546,31 +568,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="OpenRocket Core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,7 +595,7 @@
       <recent name="$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/batchplot/bkukerdispersion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Build the dang thing">
+  <component name="RunManager" selected="Application.Build ActEC">
     <configuration default="false" name="Dispersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -928,7 +926,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Build the dang thing" type="Application" factoryName="Application">
+    <configuration default="false" name="Build ActEC" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="net.sf.openrocket.startup.OpenRocket" />
       <option name="VM_PARAMETERS" value="" />
@@ -944,7 +942,7 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Build the dang thing" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Build ActEC" />
       <item index="1" class="java.lang.String" itemvalue="Application.Dispersion" />
     </list>
     <recent_temporary>
@@ -1022,14 +1020,18 @@
       <workItem from="1444862574878" duration="1190000" />
       <workItem from="1444866329897" duration="450000" />
       <workItem from="1445051686413" duration="2873000" />
+      <workItem from="1445195635049" duration="497000" />
+      <workItem from="1445198858431" duration="377000" />
+      <workItem from="1445199355040" duration="80000" />
+      <workItem from="1445217705665" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242015000" />
+    <option name="totallyTimeSpent" value="243006000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1551" height="876" extended-state="6" />
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1039,24 +1041,24 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3985056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27014828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2652553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26990914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5792235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26449645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3985056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1218,19 +1220,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
+      <provider editor-type-id="MultiMarkdownHtmlEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="MultiMarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownHtmlEditor">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/awt/event/ActionListener.java">
@@ -1356,7 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.9039302">
           <caret line="195" column="20" selection-start-line="195" selection-start-column="20" selection-end-line="195" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,11 +1397,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1980#1981#0" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,7 +1405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,7 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,7 +1419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1432,52 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18696883">
           <caret line="350" column="0" selection-start-line="350" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Simulation#0" expanded="false" />
-            <element signature="class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#UPTODATE#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#LOADED#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#OUTDATED#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#EXTERNAL#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#NOT_SIMULATED#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#CANT_RUN#0;class#Status#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#options#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#listeners#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;field#simulatedConditions#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#Simulation#0;class#Simulation#0" expanded="false" />
-            <element signature="method#Simulation#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getRocket#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getRocket#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getConfiguration#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getConfiguration#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getOptions#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getOptions#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getName#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getName#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#setName#0;class#Simulation#0" expanded="false" />
-            <element signature="method#setName#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getStatus#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getStatus#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#simulate#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getSimulatedConditions#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getSimulatedConditions#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getSimulatedWarnings#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getSimulatedWarnings#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getSimulatedConfigurationDescription#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getSimulatedConfigurationDescription#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#getSimulatedData#0;class#Simulation#0" expanded="false" />
-            <element signature="method#getSimulatedData#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#hasSimulationData#0;class#Simulation#0" expanded="false" />
-            <element signature="method#hasSimulationData#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#copy#0;class#Simulation#0" expanded="false" />
-            <element signature="docComment;method#duplicateSimulation#0;class#Simulation#0" expanded="false" />
-            <element signature="method#addChangeListener#0;class#Simulation#0" expanded="false" />
-            <element signature="method#removeChangeListener#0;class#Simulation#0" expanded="false" />
-            <element signature="method#fireChangeEvent#0;class#Simulation#0" expanded="false" />
-            <element signature="class#ConditionListener#0;class#Simulation#0" expanded="false" />
-            <element signature="method#stateChanged#0;class#ConditionListener#0;class#Simulation#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1485,14 +1433,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48">
           <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/net/sf/openrocket/gui/ActEC/dispersion/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4712042">
-          <caret line="579" column="13" selection-start-line="579" selection-start-column="13" selection-end-line="579" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.31789473">
+          <caret line="567" column="0" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#Display#0" expanded="false" />
             <element signature="e#1851#1879#0" expanded="false" />
@@ -1539,10 +1486,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/sf/openrocket/ActEC/dispersion/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4022663">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.36818182">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
           </folding>
         </state>
       </provider>

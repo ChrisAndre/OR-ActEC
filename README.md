@@ -4,20 +4,31 @@ OpenRocket-ActEC
 Overview
 --------
 
-OpenRocket-ActEC (Active Energy Control) is a testbed for high-powered rocket flight computers that control active energy elements during the boost/coast phase of a rocket. It is a derivative work of the OpenRocket software project and Bill Kuker's Dispersion project.
+OpenRocket-ActEC (Active Energy Control) is a testbed for high-power rocket flight computers that control active energy elements during the boost/coast phase of a rocket.
 
-ActEC is intended foremost to torture test candidate control algorithms. To implement this functionality, ActEC exploits the medium-fidelity flight simulation capabilities of OpenRocket to provide a realistic environment against which a candidate controller can be tested.
+ActEC is intended foremost to perform sensitivity analyses on control algorithms. ActEC makes use of the pre-existing OpenRocket project and Bill Kuker's Dispersion project to provide an accurate model of a rocket's flight.
 
-ActEC emulates onboard electronic sensors that can provide input to a controller. Their dynamics can be 'fuzzed' such that their outputs are distorted to emulate real-world noise and other imperfections. The flight conditions (including air temperate, density, etc.) as well as the physical properties/functionalities of the rocket and its control system can be 'fuzzed' to model inherent imperfections in real-world measurements.
+ActEC is being developed in response to RPI's participation in the 2016 NASA Student Launch competition. RPI's competition objective is to guide a rocket as close to 5280 feet as possible using variable drag elements; ActEC will fulfill the need for validation of our control systems.
 
-As such, ActEC provides immediate, realistic controller performance feedback that can augment/replace real test flight data.
+ActEC is currently in development. The estimated date of completion is January 2016.
+
+Current features/wishlist:
+
+* Integrated 3D graphing of trajectories (Complete)
+* Batch simulations (Complete)
+* Flight computer interface (Partially Complete)
+* Control system interface
+* Virtual sensors
+* Drag element flight models (Complete)
+* Sensor fuzzing
+* Launch condition fuzzing
 
 License
 -------
 
-OpenRocket is an Open Source project licensed under the [GNU GPL](http://openrocket.sourceforge.net/license.html). This means that the software is free to use for whatever purposes, and the source code is also available for studying and extending. ActEC is such an extension.
+OpenRocket is an Open Source project licensed under the [GNU GPL](http://openrocket.sourceforge.net/license.html). ActEC bears the same license.
 
 Contributing
 ------------
 
-ActEC is developed by Chris Andre from RPI's NASA USLI team.
+ActEC is primarily developed by Chris Andre from RPI's NASA USLI team.
