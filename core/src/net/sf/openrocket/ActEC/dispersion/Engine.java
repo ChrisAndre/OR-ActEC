@@ -25,7 +25,7 @@ Adapted from Bill Kuker's Dispersion project by Chris Andre
 public class Engine {
 	final OpenRocketDocument doc;
 	int simulationNumber = 0;
-	int runNumber = 1000;
+	int runNumber = 100;
 
 	int runCount;
 	FlightComputerType fctype;
@@ -99,7 +99,7 @@ public class Engine {
 			};
 
 			s.getOptions().setRandomSeed(r.nextInt());
-			s.simulate(mutatorListener, fc); // TODO high: the FC cannot set control values because the document is not updated...
+			s.simulate(mutatorListener, fc);
 
 			Sample sim = new Sample(s);
 
