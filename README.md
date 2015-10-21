@@ -13,24 +13,42 @@ ActEC is being developed in response to RPI's participation in the 2016 NASA Stu
 ActEC is currently in development. The estimated date of completion is January 2016.
 
 Current features/wishlist:
+-------------------------
 
-* Integrated 3D graphing of trajectories (Complete)
+**Integrated 3D graphing of trajectories (Complete)**
+
 -- 3D viewport integrated into simulation window. (Adapted from Bill Kuker's Dispersion project)
-* Batch simulations (Partially Complete)
+
+**Batch simulations (Partially Complete)**
+
 -- Can now run and view large groups of simulations in the torture test window.
-* Flight computer interface (Partially Complete)
+
+**Flight computer interface (Partially Complete)**
+
 -- Can now implement a rudimentary flight computer in Java.
+
 -- Planning on exposing the interface to Jython code so that it doesn't have to be recompiled every time!
-* Control system interface
+
+**Control system interface**
+
 -- Should have a few code panels to directly implement controllers.
-* Virtual sensors
+
+**Virtual sensors**
+
 -- Altitude, zenith angle sensors implemented.
+
 -- Will expose to Jython.
-* Control element flight models (Complete - 2016 USLI generalized drag flaps are in!)
+
+**Control element flight models (Complete for now - 2016 USLI generalized drag flaps are in!)**
+
 -- Some time was spent flipping the internals of openrocket's simulation engine, since it did not allow for generating 3-axis rotational forces in a trivial way (at least to my eye). The internals have been modified to allow for any moment in the rocket reference frame easily.
-* Sensor fuzzing
+
+**Sensor fuzzing**
+
 -- Planning on fuzzing sensor outputs to force us to account for noise. Previous teams add issues with this.
-* Launch condition fuzzing
+
+**Launch condition fuzzing**
+
 -- The core of the sensitivity analysis package. Will account for motor thrust anomalies, wind speed, launch rod angle, rocket mass, drag anomalies, etc.
 
 About RPI's Rocket and ActEC
