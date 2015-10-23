@@ -27,10 +27,10 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
     protected double baseRot = 0.0;
     protected ControlElement[] elements;
     protected ElementType type;
+    protected String controlname = "default";
 
     public ControlElementSet() {
         super(Position.BOTTOM);
-        elements = new ControlElement[num];
         setElementType(ElementType.INACTIVE);
         length = 0.01;
     }
@@ -46,6 +46,15 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
     }
 
     // Properties
+
+    public String getControlName() {
+        return controlname;
+    }
+    public void setControlName(String name) {
+        this.controlname = name;
+        setElementCount(num); // duct tape!
+    }
+
 
     public boolean getDeployed() {
         return deployed;
@@ -63,13 +72,12 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
         elements = new ControlElement[num];
         try {
             for (int i = 0; i < num; i++) {
-                // Default element
-                elements[i] = type.getElement();
+                elements[i] = type.getElement(controlname + " [" + i + "]");
             }
         } catch (Exception e) {
             for (int i = 0; i < num; i++) {
                 // Default element
-                elements[i] = new InactiveElement();
+                elements[i] = new InactiveElement("default <" + i + ">");
             }
         }
         fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);
@@ -80,15 +88,15 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
     }
     public void setElementType(ElementType type) {
         this.type = type;
+        elements = new ControlElement[num];
         try {
             for (int i = 0; i < num; i++) {
-                // Default element
-                elements[i] = type.getElement();
+                elements[i] = type.getElement(controlname + " [" + i + "]");
             }
         } catch (Exception e) {
             for (int i = 0; i < num; i++) {
                 // Default element
-                elements[i] = new InactiveElement();
+                elements[i] = new InactiveElement("default <" + i + ">");
             }
         }
         fireComponentChangeEvent(ComponentChangeEvent.BOTH_CHANGE);

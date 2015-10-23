@@ -21,16 +21,16 @@ public enum ElementType {
     ElementType(String name, Class<? extends ControlElement> type) {
         this.name = name;
         try {
-            this.ctor = type.getConstructor();
+            this.ctor = type.getConstructor(String.class);
         } catch (Exception e) {
             this.ctor = null;
         }
     }
-    public ControlElement getElement() throws InstantiationException, IllegalAccessException, InvocationTargetException{
+    public ControlElement getElement(String name) throws InstantiationException, IllegalAccessException, InvocationTargetException{
         if (ctor == null) {
             return null;
         }
-        return (ControlElement) ctor.newInstance();
+        return (ControlElement) ctor.newInstance(name);
     }
     @Override
     public String toString() {

@@ -7,11 +7,11 @@ import net.sf.openrocket.aerodynamics.WarningSet;
  * Created by chris on 8/16/15.
  */
 public class DragPlateElement extends SimpleFlatPlateElement {
-    public DragPlateElement(double area) {
-        super(area);
+    public DragPlateElement(String name, double area) {
+        super(name, area);
     }
-    public DragPlateElement() {
-        this(0.09*0.09);
+    public DragPlateElement(String name) {
+        this(name, 0.09*0.09);
     }
     @Override
     public double calculatePressureDragForce(FlightConditions conditions,

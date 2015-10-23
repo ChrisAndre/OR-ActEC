@@ -11,12 +11,12 @@ import net.sf.openrocket.aerodynamics.WarningSet;
 
 public class SimpleFlatPlateElement extends ControlElement {
     protected double area;
-    public SimpleFlatPlateElement(double area) {
+    public SimpleFlatPlateElement(String name, double area) {
+        super(name);
         this.area = area;
-        u = 0.0;
     }
-    public SimpleFlatPlateElement() {
-        this(0.09*0.09);
+    public SimpleFlatPlateElement(String name) {
+        this(name, 0.09*0.09);
     }
     @Override
     public double calculatePressureDragForce(FlightConditions conditions,

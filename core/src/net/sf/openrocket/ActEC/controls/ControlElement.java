@@ -10,12 +10,14 @@ import net.sf.openrocket.aerodynamics.WarningSet;
  */
 
 public abstract class ControlElement {
-    protected double u;
-    private double visRad;
-    public ControlElement() {
-        visRad = 0.01; // 1 cm
-        u = 0.0;
+    protected double u = 0.0;
+    protected String name;
+    private double visRad = 0.01;
+
+    public ControlElement(String name) {
+        this.name = name;
     }
+
     public double getControl() {
         return u;
     }
