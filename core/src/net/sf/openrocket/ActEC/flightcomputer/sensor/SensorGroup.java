@@ -7,7 +7,7 @@ import net.sf.openrocket.util.ArrayList;
  *
  * Group of sensors attached to a flight computer.
  */
-public class SensorGroup {
+public abstract class SensorGroup {
     protected ArrayList<Sensor> sensors;
     public SensorGroup() {
         sensors = new ArrayList<Sensor>();

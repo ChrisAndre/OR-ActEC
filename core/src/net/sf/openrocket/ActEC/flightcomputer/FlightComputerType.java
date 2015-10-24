@@ -10,7 +10,8 @@ import java.lang.reflect.InvocationTargetException;
  */
 public enum FlightComputerType {
 
-    BRICKED_COMPUTER("Bricked Computer", BrickedComputer.class);
+    BRICKED_COMPUTER("Bricked Computer", BrickedComputer.class),
+    JYCOMPUTER("Jython Computer", JyComputer.class);
 
     private String name;
     private Class<? extends FlightComputer> type;

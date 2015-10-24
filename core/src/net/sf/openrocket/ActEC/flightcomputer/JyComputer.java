@@ -1,7 +1,11 @@
 package net.sf.openrocket.ActEC.flightcomputer;
 
+import net.sf.openrocket.ActEC.flightcomputer.sensor.AllSensors;
 import net.sf.openrocket.simulation.SimulationStatus;
 import net.sf.openrocket.simulation.exception.SimulationException;
+import org.python.core.PyCode;
+import org.python.core.PyFunction;
+import org.python.core.PyObject;
 import org.python.util.PythonInterpreter;
 
 /**
@@ -12,25 +16,27 @@ import org.python.util.PythonInterpreter;
 public class JyComputer extends FlightComputer {
     protected String controllerScript;
     private PythonInterpreter interp;
-    public JyComputer(String controllerScript) {
+    private PyFunction controller;
+    public JyComputer() {
         super();
-        this.controllerScript = controllerScript;
         interp = new PythonInterpreter();
-    }
-    @Override
-    public void startSimulation(SimulationStatus status) throws SimulationException {
-        super.startSimulation(status);
-        controllables.get(0).setControl(new double[]{1.0});
+        sensors = new AllSensors();
+        setControllerScript("def control():\n\tpass");
     }
 
-    @Override
-    public void endSimulation(SimulationStatus status, SimulationException exception) {
-        super.endSimulation(status, exception);
-        controllables.get(0).setControl(new double[]{0.0});
+    public String getControllerScript() {
+        return controllerScript;
+    }
+    public void setControllerScript(String cscript) {
+        controllerScript = cscript;
+        interp.exec(controllerScript);
+        controller = (PyFunction) interp.get("control");
     }
 
     @Override
     public void postStep(SimulationStatus status) throws SimulationException {
-        controllables.get(0).setControl(new double[]{status.getSimulationTime() > 2.5 ? 1.0 : 0.0});
+        interp.set("controls", controllables);
+        interp.set("sensors", sensors);
+        controller.__call__();
     }
 }

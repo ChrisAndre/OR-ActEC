@@ -1,5 +1,6 @@
 package net.sf.openrocket.ActEC.flightcomputer;
 
+import net.sf.openrocket.ActEC.flightcomputer.sensor.AllSensors;
 import net.sf.openrocket.simulation.SimulationStatus;
 import net.sf.openrocket.simulation.exception.SimulationException;
 
@@ -10,6 +11,7 @@ public class BrickedComputer extends FlightComputer {
 
     public BrickedComputer() {
         super();
+        sensors = new AllSensors();
         log("This computer doesn't respond to emails or return calls.");
     }
 
