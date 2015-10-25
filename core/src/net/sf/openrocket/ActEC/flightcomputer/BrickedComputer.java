@@ -18,17 +18,6 @@ public class BrickedComputer extends FlightComputer {
     @Override
     public void startSimulation(SimulationStatus status) throws SimulationException {
         super.startSimulation(status);
-//        controllables.get(0).setControl(new double[]{1.0});
-    }
-
-    @Override
-    public void endSimulation(SimulationStatus status, SimulationException exception) {
-        super.endSimulation(status, exception);
-//        controllables.get(0).setControl(new double[]{0.0});
-    }
-
-    @Override
-    public void postStep(SimulationStatus status) throws SimulationException {
-//        controllables.get(0).setControl(new double[]{status.getSimulationTime() > 2.5 ? 1.0 : 0.0});
+        controllables.get(0).setControl(new double[]{0.0});
     }
 }

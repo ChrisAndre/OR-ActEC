@@ -18,6 +18,14 @@ public class SimpleFlatPlateElement extends ControlElement {
     public SimpleFlatPlateElement(String name) {
         this(name, 0.09*0.09);
     }
+
+    public double getArea() {
+        return area;
+    }
+    public void setArea(double area) {
+        this.area = area;
+    }
+
     @Override
     public double calculatePressureDragForce(FlightConditions conditions,
                                                       double stagnationCD, double baseCD, WarningSet warnings) {

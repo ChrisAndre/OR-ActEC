@@ -26,7 +26,6 @@ public class JyComputer extends FlightComputer {
         super();
         interp = new PythonInterpreter();
         sensors = new AllSensors();
-//        setControllerScript("def control():\n\tcontrols[0].setControl([1.0,0.0,0.0])");
         setControllerScript(new File("/home/chris/Desktop/Rocketry/control.py"));
         reset();
     }
@@ -61,6 +60,7 @@ public class JyComputer extends FlightComputer {
 
     @Override
     public void postStep(SimulationStatus status) throws SimulationException {
+        super.postStep(status);
         interp.set("controls", controllables);
         interp.set("sensors", sensors);
         controller.__call__();

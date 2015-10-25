@@ -55,7 +55,6 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
         setElementCount(num); // duct tape!
     }
 
-
     public boolean getDeployed() {
         return deployed;
     }

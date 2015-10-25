@@ -1,6 +1,7 @@
 package net.sf.openrocket.gui.main;
 
 import net.miginfocom.swing.MigLayout;
+import net.sf.openrocket.ActEC.controls.ElementType;
 import net.sf.openrocket.ActEC.dispersion.Engine;
 import net.sf.openrocket.ActEC.dispersion.Sample;
 import net.sf.openrocket.ActEC.dispersion.mutators.Mutator;
@@ -8,6 +9,9 @@ import net.sf.openrocket.ActEC.flightcomputer.FlightComputerType;
 import net.sf.openrocket.document.OpenRocketDocument;
 import net.sf.openrocket.document.Simulation;
 import net.sf.openrocket.gui.ActEC.dispersion.Display;
+import net.sf.openrocket.gui.SpinnerEditor;
+import net.sf.openrocket.gui.adaptors.EnumModel;
+import net.sf.openrocket.gui.adaptors.IntegerModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -46,10 +50,17 @@ public class TortureTestPanel extends JSplitPane {
         });
 
         JPanel panel = new JPanel(new MigLayout(""));
+
         panel.add(new JLabel("Torture Runs: "));
-        panel.add(new JSpinner());
+        IntegerModel num = new IntegerModel(engine, "RunCount", 1);
+        JSpinner spin = new JSpinner(num.getSpinnerModel());
+        spin.setEditor(new SpinnerEditor(spin));
+        panel.add(spin, "growx");
+
         panel.add(new JLabel("Flight Computer: "));
-        panel.add(new JComboBox<Integer>());
+        JComboBox combo = new JComboBox(new EnumModel<ElementType>(engine, "FlightComputerType"));
+        panel.add(combo, "spanx, growx");
+
         panel.add(run);
         panel.add(new JButton("Show Log"));
 

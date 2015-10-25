@@ -106,7 +106,7 @@ public class Display extends JPanel implements GLEventListener {
 	private double viewAz = 0;
 	private double viewDist = 100;
 
-	private final int LIMIT = 100;
+	private final int LIMIT = 1000;
 	private final Queue<Simulation> simulations = new ConcurrentLinkedQueue<Simulation>();
 	Simulation highlighted;
 
@@ -320,7 +320,7 @@ public class Display extends JPanel implements GLEventListener {
 	public void drawSimulation(final Simulation s, final boolean highlight, final double a,
 			final GLAutoDrawable drawable) {
 
-		for (int b = 0; b < s.getSimulatedData().getBranchCount(); b++) { // TODO: AHA! THIS FAILS AT GETSIMDATA!
+		for (int b = 0; b < s.getSimulatedData().getBranchCount(); b++) {
 			drawBranch(s.getSimulatedData().getBranch(b), false, a, drawable);
 		}
 
@@ -402,7 +402,7 @@ public class Display extends JPanel implements GLEventListener {
 	public void drawPoints(final GLAutoDrawable drawable) {
 
 
-		// CTA - reference axes points
+		// CTA - draw reference axes points
 		Coordinate x = new Coordinate(1,0,0);
 		Coordinate y = new Coordinate(0,1,0);
 		Coordinate z = new Coordinate(0,0,1);
@@ -444,6 +444,7 @@ public class Display extends JPanel implements GLEventListener {
 	 * @param drawable
 	 */
 	public void drawUpArrow(final GLAutoDrawable drawable) {
+		// CTA - draws the whole frame axis now
 		// Up arrow - Blue Z
 		gl.glColor3d(0.1, 0.1, 0.5);
 		glu.gluCylinder(q, .05, .05, .7, 10, 10);
@@ -592,6 +593,7 @@ public class Display extends JPanel implements GLEventListener {
 	}
 
 	public static void main(String args[]) throws Exception {
+		// CTA - no longer needed
 		JFrame f = new JFrame();
 		f.setSize(640, 480);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

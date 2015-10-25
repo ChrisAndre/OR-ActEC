@@ -1,6 +1,5 @@
 package net.sf.openrocket.ActEC.flightcomputer;
 
-import net.sf.openrocket.ActEC.flightcomputer.sensor.AllSensors;
 import net.sf.openrocket.ActEC.flightcomputer.sensor.SensorGroup;
 import net.sf.openrocket.rocketcomponent.RocketComponent;
 import net.sf.openrocket.simulation.SimulationStatus;

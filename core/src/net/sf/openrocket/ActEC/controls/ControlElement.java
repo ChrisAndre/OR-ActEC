@@ -22,6 +22,12 @@ public abstract class ControlElement {
         return u;
     }
     public void setControl(double u) {
+        if (u > 1.0) {
+            u = 1.0;
+        }
+        if (u < 0.0) {
+            u = 0.0;
+        }
         this.u = u;
     }
     public double getVisualRadius() {
