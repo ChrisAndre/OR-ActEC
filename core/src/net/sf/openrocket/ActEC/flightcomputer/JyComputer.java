@@ -8,6 +8,10 @@ import org.python.core.PyFunction;
 import org.python.core.PyObject;
 import org.python.util.PythonInterpreter;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
 /**
  * Created by chris on 10/20/15.
  *
@@ -15,13 +19,16 @@ import org.python.util.PythonInterpreter;
  */
 public class JyComputer extends FlightComputer {
     protected String controllerScript;
+    protected File controllerFile;
     private PythonInterpreter interp;
     private PyFunction controller;
     public JyComputer() {
         super();
         interp = new PythonInterpreter();
         sensors = new AllSensors();
-        setControllerScript("def control():\n\tpass");
+//        setControllerScript("def control():\n\tcontrols[0].setControl([1.0,0.0,0.0])");
+        setControllerScript(new File("/home/chris/Desktop/Rocketry/control.py"));
+        reset();
     }
 
     public String getControllerScript() {
@@ -31,6 +38,25 @@ public class JyComputer extends FlightComputer {
         controllerScript = cscript;
         interp.exec(controllerScript);
         controller = (PyFunction) interp.get("control");
+    }
+    public File getControllerFile() {
+        return controllerFile;
+    }
+    public void setControllerScript(File file) {
+        controllerFile = file;
+        interp.execfile(file.getAbsolutePath());
+        controller = (PyFunction) interp.get("control");
+    }
+
+    @Override
+    public void reset() {
+        super.reset();
+        interp.set("controls", controllables);
+        interp.set("sensors", sensors);
+        if (controllerScript != null)
+            setControllerScript(controllerScript);
+        else
+            setControllerScript(controllerFile);
     }
 
     @Override
