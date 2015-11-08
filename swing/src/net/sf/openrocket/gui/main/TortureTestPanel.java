@@ -15,6 +15,8 @@ import net.sf.openrocket.gui.adaptors.IntegerModel;
 import net.sf.openrocket.gui.adaptors.SimulationDropdownModel;
 
 import javax.swing.*;
+import javax.swing.text.DefaultStyledDocument;
+import javax.swing.text.PlainDocument;
 import javax.swing.text.SimpleAttributeSet;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -56,10 +58,11 @@ public class TortureTestPanel extends JSplitPane {
     private JButton run;
     private JTextArea mutators;
     private JTextArea filepath;
+    private JTextField filepath2;
     private JTextPane consolePane;
     private TextConsole consoleOutput;
 
-    public TortureTestPanel(OpenRocketDocument doc, Engine engine) {
+    public TortureTestPanel(OpenRocketDocument doc, final Engine engine) {
         super(JSplitPane.HORIZONTAL_SPLIT, true);
         this.document = doc;
         this.engine = engine;
@@ -67,43 +70,64 @@ public class TortureTestPanel extends JSplitPane {
         display = new Display();
         engine.setFlightComputerType(FlightComputerType.BRICKED_COMPUTER);
 
-        JPanel panel = new JPanel(new MigLayout("debug", "[][][][grow]", "[][grow][]"));
+        JPanel panel = new JPanel(new MigLayout("debug, fillx, nogrid"));
 
         panel.add(new JLabel("Torture Runs: "));
         IntegerModel num = new IntegerModel(engine, "RunCount", 1);
         JSpinner spin = new JSpinner(num.getSpinnerModel());
         spin.setEditor(new SpinnerEditor(spin));
-        panel.add(spin, "growx");
+        panel.add(spin, "growx, gapright para");
 
         panel.add(new JLabel("Flight Computer: "));
         JComboBox combo = new JComboBox(new EnumModel<FlightComputerType>(engine, "FlightComputerType"));
-        panel.add(combo, "spanx, growx");
+        panel.add(combo, "spanx, growx, wrap");
 
 //        JButton showlog = new JButton("Show Log");
 //        panel.add(showlog, "spanx");
 
         panel.add(new JLabel("JyComputer Path: "));
         filepath = new JTextArea();
-        panel.add(filepath, "growx, spanx 1");
+        filepath2 = new JTextField();
+        panel.add(filepath2, "growx, spanx 1");
+
+        mutators = new JTextArea();
 
         run = new JButton("Run");
         run.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 display.purgeSimulations();
+                consolePane.setDocument(new DefaultStyledDocument());
+                engine.setControllerFilePath(filepath2.getText()); // TODO: this should be done with a TextModel thing
+                engine.setMutatorScript(mutators.getText());
                 run();
             }
         });
         panel.add(run, "wrap");
 
-        mutators = new JTextArea();
-        panel.add(mutators, "span, grow");
+        // Mutator/Console pane=====================================================
+
+        JSplitPane jsp = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        jsp.setResizeWeight(0.5);
+
+        JScrollPane scrollmut = new JScrollPane(mutators);
+//        panel.add(scrollmut, "span, grow, push, wrap");
+//        panel.add(mutators, "span, grow, push, wrap");
 
         consolePane = new JTextPane();
         consoleOutput = new TextConsole(consolePane);
-        panel.add(consolePane, "spanx, grow");
-        engine.setPrintStream(new PrintStream(consoleOutput));
+        JScrollPane scrollcon = new JScrollPane(consolePane);
+//        panel.add(scrollcon, "span, grow, push, wrap");
+//        panel.add(consolePane, "spanx, grow");
 
+        jsp.setTopComponent(scrollmut);
+        jsp.setBottomComponent(scrollcon);
+
+        panel.add(jsp, "span, grow, push, wrap");
+
+        //==========================================================================
+
+        engine.setPrintStream(new PrintStream(consoleOutput));
 
         setLeftComponent(panel);
         setRightComponent(display);
@@ -121,6 +145,7 @@ public class TortureTestPanel extends JSplitPane {
         }
         catch (Exception e) {
             // TODO:
+            int i = 1;
         }
     }
 }
