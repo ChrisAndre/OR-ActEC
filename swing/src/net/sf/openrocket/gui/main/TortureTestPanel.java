@@ -70,7 +70,7 @@ public class TortureTestPanel extends JSplitPane {
         display = new Display();
         engine.setFlightComputerType(FlightComputerType.BRICKED_COMPUTER);
 
-        JPanel panel = new JPanel(new MigLayout("debug, fillx, nogrid"));
+        JPanel panel = new JPanel(new MigLayout("fillx, nogrid"));
 
         panel.add(new JLabel("Torture Runs: "));
         IntegerModel num = new IntegerModel(engine, "RunCount", 1);

@@ -23,6 +23,8 @@ import net.sf.openrocket.util.ChangeSource;
 import net.sf.openrocket.util.SafetyMutex;
 import net.sf.openrocket.util.StateChangeListener;
 import org.python.core.PyArray;
+import org.python.core.PyInteger;
+import org.python.core.PyList;
 import org.python.core.PyType;
 import org.python.util.PythonInterpreter;
 
@@ -134,10 +136,16 @@ public class Engine implements ChangeSource {
 		}
 	}
 	public void setMutatorScript(String script) {
+//		mutationdriver.exec("import sys;sys.path.append(\"/net.sf.openrocket.ActEC.dispersion\")");
 		mutationdriver.exec(script);
 		try {
-			PyArray muts = (PyArray) mutationdriver.get("mutators");
-			mutators = (Mutator[]) muts.getArray();
+//			PyArray muts = ;
+			PyList muts = (PyList) mutationdriver.get("mutators");
+			mutators = new Mutator[muts.size()];
+			for (int i = 0; i < mutators.length; i++) {
+				mutators[i] = (Mutator) muts.get(i); // Annoying workaround
+			}
+//			mutators = (Mutator[]) muts.toArray();
 		}
 		catch (Exception e) {
 //			PyArray muts = (PyArray) mutationdriver.eval("[]");
