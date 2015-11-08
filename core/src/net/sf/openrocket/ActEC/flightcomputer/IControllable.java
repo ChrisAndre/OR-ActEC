@@ -5,4 +5,5 @@ package net.sf.openrocket.ActEC.flightcomputer;
  */
 public interface IControllable {
     void setControl(double[] u);
+    void resetControl();
 }

@@ -7,6 +7,7 @@ import net.sf.openrocket.simulation.exception.SimulationException;
 import net.sf.openrocket.simulation.listeners.AbstractSimulationListener;
 import net.sf.openrocket.ActEC.flightcomputer.sensor.Sensor;
 
+import java.io.PrintStream;
 import java.util.*;
 
 /**
@@ -19,6 +20,7 @@ public abstract class FlightComputer extends PureListenerGroup {
     private StringBuilder log;
     protected SensorGroup sensors;
     protected List<IControllable> controllables;
+    protected PrintStream printStream;
     public FlightComputer() {
         log = new StringBuilder("");
     }
@@ -34,6 +36,9 @@ public abstract class FlightComputer extends PureListenerGroup {
         for (Sensor s : sensors.getSensors()) {
             s.reset();
         }
+    }
+    public void setPrintStream(PrintStream ps) {
+        this.printStream = ps;
     }
     private ArrayList<RocketComponent> locateControllables(RocketComponent r) {
         ArrayList<RocketComponent> rcs = new ArrayList<RocketComponent>();

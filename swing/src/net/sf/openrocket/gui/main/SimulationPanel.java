@@ -25,6 +25,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableCellRenderer;
 
 import net.miginfocom.swing.MigLayout;
+import net.sf.openrocket.ActEC.dispersion.Engine;
 import net.sf.openrocket.aerodynamics.Warning;
 import net.sf.openrocket.aerodynamics.WarningSet;
 import net.sf.openrocket.document.OpenRocketDocument;
@@ -86,14 +87,16 @@ public class SimulationPanel extends JPanel {
 	private final JButton tortureButton;
 
 	private Display display;
+	private final Engine engine;
 
-	public SimulationPanel(OpenRocketDocument doc, Display dsp) {
+	public SimulationPanel(OpenRocketDocument doc, Display dsp, Engine eng) {
 //		super(new MigLayout("fill", "[grow][][][][][][grow]"));
-		super(new MigLayout("fill", "[grow][][][][][][grow]"));
+		super(new MigLayout("fillx, filly", "[][][][][][][grow]"));
 //		super(new MigLayout(""));
 
 		this.document = doc;
 		this.display = dsp;
+		this.engine = eng;
 
 
 
@@ -120,7 +123,7 @@ public class SimulationPanel extends JPanel {
 				}
 			});
 //			this.add(button, "skip 1, gapright para");
-			this.add(button, "gapright para");
+			this.add(button, "gapright");
 		}
 
 		//// Edit simulation button
@@ -142,7 +145,7 @@ public class SimulationPanel extends JPanel {
 				openDialog(false, sims);
 			}
 		});
-		this.add(editButton, "gapright para");
+		this.add(editButton, "gapright");
 
 		//// Run simulations
 		runButton = new JButton(trans.get("simpanel.but.runsimulations"));
@@ -168,7 +171,7 @@ public class SimulationPanel extends JPanel {
 				fireMaintainSelection();
 			}
 		});
-		this.add(runButton, "gapright para");
+		this.add(runButton, "gapright");
 
 		//// Delete simulations button
 		deleteButton = new JButton(trans.get("simpanel.but.deletesimulations"));
@@ -223,7 +226,7 @@ public class SimulationPanel extends JPanel {
 				simulationTableModel.fireTableDataChanged();
 			}
 		});
-		this.add(deleteButton, "gapright para");
+		this.add(deleteButton, "gapright");
 
 		//// Plot / export button
 		plotButton = new JButton(trans.get("simpanel.but.plotexport"));
@@ -253,7 +256,7 @@ public class SimulationPanel extends JPanel {
 
 			}
 		});
-		this.add(plotButton, "gapright para"); // change to wrap para instead of gapright para if this is the last button
+		this.add(plotButton, "gapright"); // change to wrap para instead of gapright para if this is the last button
 
 		//// Plot 3D button
 		plot3DButton = new JButton("Plot 3D");
@@ -285,7 +288,7 @@ public class SimulationPanel extends JPanel {
 
 			}
 		});
-		this.add(plot3DButton, "gapright para");
+		this.add(plot3DButton, "gapright");
 
 		//// Torture test button
 		tortureButton = new JButton("Torture test");
@@ -311,11 +314,12 @@ public class SimulationPanel extends JPanel {
 				fireMaintainSelection();
 
 				// Set the global engine's simnum from here... TODO CTA
+				engine.setSimulationNumber(selected);
 
 
 			}
 		});
-		this.add(tortureButton, "wrap para");
+		this.add(tortureButton, "wrap");
 
 
 
@@ -632,7 +636,8 @@ public class SimulationPanel extends JPanel {
 
 
 		JScrollPane scrollpane = new JScrollPane(simulationTable);
-		this.add(scrollpane, "spanx, grow, wrap rel");
+//		this.add(scrollpane, "spanx, grow, wrap rel");
+		this.add(scrollpane, "pushy, grow, spanx, spany");
 
 		updateButtonStates();
 	}

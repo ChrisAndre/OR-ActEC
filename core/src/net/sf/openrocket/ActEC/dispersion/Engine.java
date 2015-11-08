@@ -1,5 +1,6 @@
 package net.sf.openrocket.ActEC.dispersion;
 
+import java.io.PrintStream;
 import java.util.*;
 
 import net.sf.openrocket.ActEC.flightcomputer.FlightComputer;
@@ -25,12 +26,14 @@ Adapted from Bill Kuker's Dispersion project by Chris Andre
  */
 
 public class Engine implements ChangeSource {
-	final OpenRocketDocument doc;
+	final public OpenRocketDocument doc;
 	int simulationNumber = 0;
+	private Simulation simulation = null;
 	private List<EventListener> listeners = new ArrayList<EventListener>();
 	int runCount = 100;
 	FlightComputerType fctype;
 	private SafetyMutex mutex = SafetyMutex.newInstance();
+	private PrintStream printStream;
 	final List<Mutator> mutators;
 	final List<SampleListener> sampleListeners = new Vector<SampleListener>();
 
@@ -91,6 +94,10 @@ public class Engine implements ChangeSource {
 	public int getSimulationNumber() { return simulationNumber; }
 	public void setSimulationNumber(int simnum) { simulationNumber = simnum; }
 
+	public void setPrintStream(PrintStream ps) {
+		this.printStream = ps;
+	}
+
 	public void run() throws SimulationException {
 		for (int i = 0; i < runCount; i++) {
 			OpenRocketDocument doc = this.doc.copy();
@@ -106,6 +113,7 @@ public class Engine implements ChangeSource {
 			FlightComputer fc = null;
 			try {
 				fc = fctype.getComputer();
+				fc.setPrintStream(this.printStream);
 			}
 			catch(Exception e) {
 				//TODO Low

@@ -3,14 +3,13 @@ package net.sf.openrocket.ActEC.flightcomputer;
 import net.sf.openrocket.ActEC.flightcomputer.sensor.AllSensors;
 import net.sf.openrocket.simulation.SimulationStatus;
 import net.sf.openrocket.simulation.exception.SimulationException;
-import org.python.core.PyCode;
-import org.python.core.PyFunction;
-import org.python.core.PyObject;
+import org.python.core.*;
 import org.python.util.PythonInterpreter;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.PrintStream;
 
 /**
  * Created by chris on 10/20/15.
@@ -22,6 +21,7 @@ public class JyComputer extends FlightComputer {
     protected File controllerFile;
     private PythonInterpreter interp;
     private PyFunction controller;
+    private PyObject inst;
     public JyComputer() {
         super();
         interp = new PythonInterpreter();
@@ -36,15 +36,26 @@ public class JyComputer extends FlightComputer {
     public void setControllerScript(String cscript) {
         controllerScript = cscript;
         interp.exec(controllerScript);
-        controller = (PyFunction) interp.get("control");
+        inst = interp.eval("FlightComputer()");
+//        inst.invoke("startup");
+//        controller = (PyFunction) inst.__getattr__("control");
     }
+
     public File getControllerFile() {
         return controllerFile;
     }
     public void setControllerScript(File file) {
         controllerFile = file;
         interp.execfile(file.getAbsolutePath());
-        controller = (PyFunction) interp.get("control");
+        inst = (PyObject) interp.eval("FlightComputer()");
+//        inst.invoke("startup");
+//        controller = (PyFunction) inst.__getattr__("control");
+    }
+
+    @Override
+    public void setPrintStream(PrintStream ps) {
+        super.setPrintStream(ps);
+        interp.setOut(printStream);
     }
 
     @Override
@@ -59,10 +70,16 @@ public class JyComputer extends FlightComputer {
     }
 
     @Override
+    public void startSimulation(SimulationStatus status) throws SimulationException {
+        super.startSimulation(status);
+        inst.invoke("startup");
+    }
+    @Override
     public void postStep(SimulationStatus status) throws SimulationException {
         super.postStep(status);
         interp.set("controls", controllables);
         interp.set("sensors", sensors);
-        controller.__call__();
+//        controller.__call__();
+        inst.invoke("control");
     }
 }

@@ -5,7 +5,8 @@ import net.sf.openrocket.simulation.SimulationStatus;
 import net.sf.openrocket.simulation.exception.SimulationException;
 
 /**
- * Created by chris on 8/18/15.
+ * Openrocket ActEC Project
+ * Author: Chris Andre
  */
 public class BrickedComputer extends FlightComputer {
 
@@ -18,6 +19,7 @@ public class BrickedComputer extends FlightComputer {
     @Override
     public void startSimulation(SimulationStatus status) throws SimulationException {
         super.startSimulation(status);
-        controllables.get(0).setControl(new double[]{0.0});
+        for (IControllable i : controllables)
+            i.resetControl();
     }
 }

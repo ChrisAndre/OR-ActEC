@@ -23,11 +23,12 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
     protected int num = 3;
     protected double indiv_size = 0.05;
     protected boolean deployed = true;
-    private double multRadius = 1.0;
+    private double multRadius = 1.0; // TODO: shouldn't use this
     protected double baseRot = 0.0;
     protected ControlElement[] elements;
     protected ElementType type;
     protected String controlname = "default";
+    private Coordinate biasCMoment = new Coordinate(0.0,0.0,0.0);
 
     public ControlElementSet() {
         super(Position.BOTTOM);
@@ -43,6 +44,19 @@ public class ControlElementSet extends ExternalComponent implements IControllabl
         for (int i = 0; i < elements.length; i++) {
             elements[i].setControl(u[i]);
         }
+    }
+
+    public void resetControl() {
+        for (int i = 0; i < elements.length; i++) {
+            elements[i].setControl(0.0);
+        }
+    }
+
+    public void setBiasCMoment(Coordinate c) {
+        this.biasCMoment = c;
+    }
+    public Coordinate getBiasCMoment() {
+        return this.biasCMoment;
     }
 
     // Properties

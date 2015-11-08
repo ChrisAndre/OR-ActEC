@@ -45,7 +45,7 @@ Current features/wishlist:
 
 **Sensor fuzzing**
 
--- Planning on fuzzing sensor outputs to force us to account for noise. Previous teams add issues with this.
+-- Planning on fuzzing sensor outputs to force us to account for noise. Previous teams had issues with this.
 
 **Launch condition fuzzing**
 

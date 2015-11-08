@@ -1,5 +1,6 @@
 package net.sf.openrocket.ActEC.controls;
 
+import net.sf.openrocket.ActEC.flightcomputer.IControllable;
 import net.sf.openrocket.aerodynamics.FlightConditions;
 import net.sf.openrocket.aerodynamics.WarningSet;
 

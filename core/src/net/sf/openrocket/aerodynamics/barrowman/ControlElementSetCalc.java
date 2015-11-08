@@ -40,7 +40,7 @@ public class ControlElementSetCalc extends RocketComponentCalc {
             mx += -elem_forces[i] * Math.cos(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
             my += -elem_forces[i] * Math.sin(ces.getRot(i)) * ces.getBodyRadius() / conditions.getRefLength();
         }
-        forces.setCMoment(new Coordinate(mx, my, 0.0));
+        forces.setCMoment((new Coordinate(mx, my, 0.0)).add(ces.getBiasCMoment()));
     }
 
     @Override
