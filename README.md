@@ -3,6 +3,8 @@ OpenRocket-ActEC
 
 Website: http://www.chrisandre.org/OR-ActEC/
 
+This project is not in development at this time, as it no longer has a developer. Chris will be taking leave during the Spring 2016 semester to work full-time on co-op.
+
 Overview
 --------
 
@@ -11,8 +13,6 @@ OpenRocket-ActEC (Active Energy Control) is a testbed for high-power rocket flig
 ActEC is intended foremost to perform sensitivity analyses on control algorithms. ActEC makes use of the pre-existing OpenRocket project and Bill Kuker's Dispersion project to provide an accurate model of a rocket's flight.
 
 ActEC is being developed in response to RPI's participation in the 2016 NASA Student Launch competition. RPI's competition objective is to guide a rocket as close to 5280 feet as possible using variable drag elements; ActEC will fulfill the need for validation of our control systems.
-
-ActEC is currently in development. The estimated date of completion is January 2016.
 
 Current features/wishlist:
 -------------------------
