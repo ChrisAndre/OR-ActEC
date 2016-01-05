@@ -3,7 +3,7 @@ OpenRocket-ActEC
 
 Website: http://www.chrisandre.org/OR-ActEC/
 
-This project is not in development at this time, as it no longer has a developer. Chris will be taking leave during the Spring 2016 semester to work full-time on co-op.
+This project is not in development at this time, as it no longer has a developer. Chris will be taking leave during the Spring 2016 semester to work full-time on co-op. See https://github.com/ChrisAndre/qaec
 
 Overview
 --------
